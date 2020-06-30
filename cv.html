@@ -7,17 +7,17 @@
     <title>Andreu Anglés-Castillo</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="javascript/loko.js"></script>
+    <script src="javascript/top-button.js"></script>
     
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
     <div class="navbar">
-        <div></div>
         <div class="nav-items">
             <a href="index.html" class="nav-link">Home</a>
             <a href="cv.html" class="nav-link active-nav-link">CV</a>
@@ -27,36 +27,71 @@
             <a href="about.html" class="nav-link">Code</a>
         </div>
     </div>
-    
     <div class="container">
+
         <div class="index-cv">
-            <div class="icon"><p><i class="fa fa-user fa-lg"></i></p></div> <p><a href="#cv-personal">Personal Info</a></p>
-            <div class="icon"><p><i class="fa fa-mortar-board fa-lg"></i></p></div> <p><a href="#cv-education">Education</a></p>
-            <div class="icon"><p><i class="fa fa-flask fa-lg"></i></p></div> <p><a href="#cv-research">Research</a></p>
-            <div class="icon"><p><i class="fa fa-group fa-lg"></i></p></div> <p><a href="#cv-conferences">Conferences</a></p>
+            <a class="element-cv" href="#cv-personal"><div class="icon"><p><i class="fa fa-user fa-lg"></i></p></div> <p>Personal Info</p></a>
+            <a class="element-cv" href="#cv-education"><div class="icon"><p><i class="fa fa-mortar-board fa-lg"></i></p></div> <p>Education</p></a>
+            <a class="element-cv" href="#cv-research"><div class="icon"><p><i class="fa fa-flask fa-lg"></i></p></div> <p>Research</p></a>
+            <a class="element-cv" href="#cv-conferences"><div class="icon"><p><i class="fa fa-group fa-lg"></i></p></div> <p>Conferences</p></a>
         </div>
+
         <div class="container-cv">
+            <a class="download-cv" href="assets/files/TFM.pdf" download><i class="fa fa-file-pdf-o fa-lg"> PDF</i></a>
+
             <h1 id="cv-personal">Personal details</h1>
-            <p>Nom, Direccion, Data naixement, ...</p>
-            <p>Lokures</p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget magna lacus. Vestibulum euismod risus non mi semper, vel maximus diam dapibus. Nulla sed lacus quis quam finibus consequat. Aenean lectus justo, tristique non dolor ut, iaculis mattis tellus. Nam leo ipsum, auctor laoreet nunc a, mattis lacinia lacus. Ut pellentesque libero sed odio ultricies, et ultricies massa sagittis. Morbi vel dolor a libero vulputate egestas. Nam pretium efficitur dictum. Curabitur maximus eu diam eget molestie. Vestibulum efficitur accumsan arcu, a tincidunt diam ultricies at. Sed sit amet risus malesuada ipsum tincidunt ultrices. Proin at neque porttitor, euismod tortor vel, imperdiet arcu. Fusce fringilla facilisis nisl, ut tempor arcu aliquet nec. Ut a turpis at tellus convallis pulvinar.
-            </p>
-            <p>
-                Nullam sed volutpat neque. Nam venenatis auctor molestie. Etiam scelerisque est id orci convallis fermentum. Quisque consequat, odio id fringilla varius, leo risus elementum dui, at facilisis libero enim vitae dolor. Phasellus vitae tincidunt nibh, a aliquet odio. Pellentesque lobortis auctor finibus. Nunc sit amet lorem et elit pretium semper eu non enim. Quisque eget velit posuere, semper tellus et, iaculis erat. Nunc posuere risus purus, ut ornare mi porta eu. Integer diam purus, ullamcorper eget laoreet in, iaculis et tellus. Donec luctus mauris eu leo mattis condimentum. Fusce mattis lobortis pellentesque. Etiam ac mi a enim ullamcorper pulvinar sed a neque.
-            </p>
-            <p>
-                Etiam sed porttitor tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet pharetra ipsum, a rutrum neque aliquam in. Curabitur tincidunt vel diam id posuere. Quisque dui erat, commodo sed lorem rhoncus, tempor malesuada ipsum. Aliquam auctor, velit eu vestibulum laoreet, massa enim efficitur lacus, vel malesuada quam risus aliquam massa. Morbi ut dui ac mi iaculis fringilla sit amet vitae neque. Proin aliquet nunc non dui maximus, at pulvinar quam rutrum. Curabitur eu tortor risus. Maecenas vel risus eu tortor tempor luctus eget quis risus. Aliquam quis urna sit amet ante porttitor lacinia. Praesent sed urna risus. Morbi venenatis faucibus dui mollis suscipit. Quisque eros mi, malesuada ac augue eu, consequat tempor nibh. Nulla eu mauris nec justo sagittis venenatis.
-        
-            </p>
-            <h1 id="publications">Seccio</h1>
+
+            <div class="seccio-cv">
+                <div class="categoria-cv">Name</div>
+                <div class="contingut-cv">Andreu Anglés-Castillo</div>
+            </div>
+
+            <div class="seccio-cv">
+                <div class="categoria-cv">Addres</div>
+                <div class="contingut-cv">Avinguda Constitució, 127, 6A<br>46009, València<br> València, Spain</div>
+            </div>
+
+            <div class="seccio-cv">
+                <div class="categoria-cv">Contact</div>
+                <div class="contingut-cv">Work: <a href="mailto:andreu.angles@ific.uv.es">Andreu.Angles@ific.uv.es</a>
+                    <br> Personal: <a href="mailto:andreu.angles@ific.uv.es">andreu@angles-castillo.com</a>
+                    <br>(+34) 652768388</div>
+            </div>
+
+
+            <h1 id="cv-education">Education</h1>
+
+            <div class="seccio-cv">
+                <div class="categoria-cv">PhD in Physics<br>2018-present</div>
+                <div class="contingut-cv">University: Universitat de València<br>Location: València, Spain
+                    <br> Affilliation: Instuto de Física Corpuscular (CSIC)
+                    <br>Thesis title: Open Quantum Systems Research</div>
+            </div>
+
+            <div class="seccio-cv">
+                <div class="categoria-cv">Master in Advanced Physics<br>2017-2018</div>
+                <div class="contingut-cv">University: Universitat de València<br>Location: València, Spain 
+                    <br>Average score: 9.46
+                    <br>Thesis title: An open quantum system coupled to an open environment (<a href="assets/files/TFM.pdf" download>PDF</a>) </div>
+            </div>
+
+            <div class="seccio-cv">
+                <div class="categoria-cv">Degree in Physics<br>2013-2017</div>
+                <div class="contingut-cv">University: Universitat de València<br>Location: València, Spain 
+                    <br>Average score: 8.74<br> Subjects with honors: 6 (including TFG) 
+                    <br>Thesis title: Stationary models of extragalactic jets (<a href="assets/files/TFG.pdf" download>PDF</a>) </div>
+            </div>
+
+            
+
+            <h1 id="cv-research">Research</h1>
             <p>
                 Cras vestibulum erat at justo sagittis, pellentesque pretium augue dignissim. Vestibulum ut mi vehicula lectus gravida pharetra. Vestibulum id metus neque. Nulla facilisi. Sed euismod scelerisque semper. Nulla tincidunt mattis mi luctus semper. Phasellus ut erat at risus vestibulum facilisis eget eu nibh. Nulla accumsan lectus quis tellus mattis congue.
             </p>
             <p>
                 Pellentesque sollicitudin, massa a sollicitudin viverra, nunc nibh egestas turpis, non dapibus ex lorem id dolor. Curabitur felis erat, blandit ac ornare gravida, hendrerit et erat. Etiam dictum libero vitae turpis pharetra, vitae egestas libero tempus. Sed dictum augue vel dui volutpat dictum. Praesent egestas arcu enim, vitae finibus ipsum efficitur sit amet. Fusce magna sapien, mollis aliquam magna sed, cursus vulputate lectus. Ut ullamcorper orci mi, et ullamcorper mi pharetra id. Nulla ullamcorper semper elementum. Morbi id erat at dolor accumsan ornare. Aliquam congue malesuada facilisis. Cras vitae leo fringilla, suscipit nulla fringilla, eleifend eros. Duis finibus metus eget nisi luctus, in tincidunt ante aliquet. Nunc varius enim eget velit iaculis, non elementum nulla dignissim. Donec luctus, metus et lobortis suscipit, nibh
             </p>
-            <p>
+            <p>A
                 Cras vestibulum erat at justo sagittis, pellentesque pretium augue dignissim. Vestibulum ut mi vehicula lectus gravida pharetra. Vestibulum id metus neque. Nulla facilisi. Sed euismod scelerisque semper. Nulla tincidunt mattis mi luctus semper. Phasellus ut erat at risus vestibulum facilisis eget eu nibh. Nulla accumsan lectus quis tellus mattis congue.
             </p>
             <p>
@@ -69,6 +104,8 @@
                 Pellentesque sollicitudin, massa a sollicitudin viverra, nunc nibh egestas turpis, non dapibus ex lorem id dolor. Curabitur felis erat, blandit ac ornare gravida, hendrerit et erat. Etiam dictum libero vitae turpis pharetra, vitae egestas libero tempus. Sed dictum augue vel dui volutpat dictum. Praesent egestas arcu enim, vitae finibus ipsum efficitur sit amet. Fusce magna sapien, mollis aliquam magna sed, cursus vulputate lectus. Ut ullamcorper orci mi, et ullamcorper mi pharetra id. Nulla ullamcorper semper elementum. Morbi id erat at dolor accumsan ornare. Aliquam congue malesuada facilisis. Cras vitae leo fringilla, suscipit nulla fringilla, eleifend eros. Duis finibus metus eget nisi luctus, in tincidunt ante aliquet. Nunc varius enim eget velit iaculis, non elementum nulla dignissim. Donec luctus, metus et lobortis suscipit, nibh
             </p>
         </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up fa-lg"></i></button>
     </div>
 
 
