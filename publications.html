@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andreu Anglés-Castillo</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="javascript/top-button.js"></script>
+    
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-items">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="cv.html" class="nav-link">CV</a>
+            <a href="publications.html" class="nav-link active-nav-link">Publications</a>
+            <a href="about.html" class="nav-link">Teaching</a>
+            <a href="about.html" class="nav-link">Blog</a>
+            <a href="about.html" class="nav-link">Code</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="index-cv">
+            <a class="element-cv" href="#2021"> <p>2021</p></a>
+            <a class="element-cv" href="#2020"> <p>2020</p></a>        
+        </div>
+
+        <div class="container-pub">
+            <h1 id="2020">2020</h1>
+            <div class="publication-entry">
+                <div class="pub-title">Prethermalization of quantum systems interacting with non-equilibrium environments </div>
+                <div class="pub-im-link">
+                    <div class="pub-image"><img src="assets/files/Publications/OQS.jpeg" width=100%></div>
+                    <div class="pub-links">
+                        <a class="pub-links-element arxiv" href="https://arxiv.org/abs/2005.07437">arXiv</a>
+                        <!-- <a class="pub-links-element revista" href="">Journal of Physics A</a> -->
+                        <!-- <a class="pub-links-element cites">Citations: </a> -->
+                    </div>
+                </div>
+                <div class="pub-abstract">The usual paradigm of open quantum systems falls short when the environment is actually coupled to additional fields or components that drive it out of equilibrium. Here we explore the simplest such scenario, by considering a two level system coupled to a first thermal reservoir that in turn couples to a second thermal bath at a different temperature. We derive a master equation description for the system and show that, in this situation, the dynamics can be especially rich. In particular, we observe prethermalization, a transitory phenomenon in which the system initially approaches thermal equilibrium with respect to the first reservoir, but after a longer time converges to the thermal state dictated by the temperature of the second environment. Using analytical arguments and numerical simulations, we analyze the occurrence of this phenomenon, and how it depends on temperatures and coupling strengths. The phenomenology gets even richer if the system is placed between two such non-equilibrium environments. In this case, the energy current through the system may exhibit transient features and even switch direction, before the system eventually reaches a non-equilibrium steady state. </div>
+            </div>
+
+            <div class="publication-entry">
+                <div class="pub-title">Quantum simulation of quantum relativistic diffusion via quantum walks </div>
+                <div class="pub-im-link">
+                    <div class="pub-image"><img src="assets/files/Publications/QuantumNoise.png" width=100%></div>
+                    <div class="pub-links">
+                        <a class="pub-links-element arxiv" href="https://arxiv.org/abs/1911.09791">arXiv</a>
+                        <a class="pub-links-element revista" href="https://iopscience.iop.org/article/10.1088/1751-8121/ab8245/meta">Journal of Physics A</a>
+                        <!-- <a class="pub-links-element cites">Citations: </a> -->
+                    </div>
+                </div>
+                <div class="pub-abstract">Two models are first presented, of one-dimensional discrete-time quantum walk (DTQW) with temporal noise on the internal degree of freedom (i.e., the coin): (i) a model with both a coin-flip and a phase-flip channel, and (ii) a model with random coin unitaries. It is then shown that both these models admit a common limit in the spacetime continuum, namely, a Lindblad equation with Dirac-fermion Hamiltonian part and, as Lindblad jumps, a chirality flip and a chirality-dependent phase flip, which are two of the three standard error channels for a two-level quantum system. This, as one may call it, Dirac Lindblad equation, provides a model of quantum relativistic spatial diffusion, which is evidenced both analytically and numerically. This model of spatial diffusion has the intriguing specificity of making sense only with original unitary models which are relativistic in the sense that they have chirality, on which the noise is introduced: The diffusion arises via the by-construction (quantum) coupling of chirality to the position. For a particle with vanishing mass, the model of quantum relativistic diffusion introduced in the present work, reduces to the well-known telegraph equation, which yields propagation at short times, diffusion at long times, and exhibits no quantumness. Finally, the results are extended to temporal noises which depend smoothly on position.</div>            
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up fa-lg"></i></button>
+    </div>
+
+
+
+</body>
+
+</html>

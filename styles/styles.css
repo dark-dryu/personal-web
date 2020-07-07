@@ -69,7 +69,7 @@ body {
 .container{
     vertical-align: middle;
     display: grid;
-    grid-template-columns: minmax(4cm, 25%) minmax(15cm, auto)  minmax(4cm, 25%);
+    grid-template-columns: minmax(4cm, 25%) auto  minmax(4cm, 25%);
     grid-template-rows: minmax(var(--top-spacing), auto) auto minmax(var(--top-spacing), auto);
     height: 100%;
 }
@@ -107,9 +107,7 @@ body {
     line-height: 1.3;
 }
 
-.icon{
-    text-align: center;
-}
+
 
 .columnDivider {
     grid-column: start/end;
@@ -129,6 +127,19 @@ body {
     padding-top: 0.5cm;
 }
 
+.container-cv h1{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-cv h1::before { 
+    display: block; 
+    content: " "; 
+    margin-top: var(--top-spacing-neg); 
+    height: var(--top-spacing); 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
 .index-cv{
     grid-column: 1/2;
     grid-row: 2/3;
@@ -139,6 +150,10 @@ body {
     position: fixed;
     width: 18%;
 
+}
+
+.icon{
+    text-align: center;
 }
 
 .element-cv{
@@ -158,21 +173,6 @@ body {
     color: white;
     border-radius: 5px;
     transition: background 0.5s;
-}
-
-
-
-.container-cv h1{
-    font-family: 'Roboto', sans-serif;
-}
-
-.container-cv h1::before { 
-    display: block; 
-    content: " "; 
-    margin-top: var(--top-spacing-neg); 
-    height: var(--top-spacing); 
-    visibility: hidden; 
-    pointer-events: none;
 }
 
 
@@ -203,6 +203,8 @@ body {
 }
 
 .download-cv{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     float: right;
     margin-top: 15px;
@@ -223,8 +225,7 @@ body {
 
 #myBtn {
     grid-column: 1/2;
-    grid-row: 2/3;
-    
+    grid-row: 2/3;    
 
     position: fixed;
     margin-left: 3.5%;
@@ -247,4 +248,107 @@ body {
     background-color: black;
     color: white;
     transition: background 0.5s;
+}
+
+.container-pub{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-content: end;
+    margin: 0cm;
+    padding: 0cm;
+    padding-top: 0.5cm;
+}
+
+.container-pub h1{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-pub h1::before { 
+    display: block; 
+    content: " "; 
+    margin-top: var(--top-spacing-neg); 
+    height: var(--top-spacing); 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
+.publication-entry{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color:  rgba(128, 128, 128, 0.75);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.pub-title{
+    grid-column: 1/3;
+    font-size: 24pt;
+    padding: 3%;
+    font-style: bold;
+}
+
+.pub-abstract{
+    padding: 26px;
+    padding-left: 13px;
+    grid-column: 2/3;
+    text-align: justify;
+}
+
+.pub-im-link{
+    grid-column: 1/2;
+    align-content: start;
+    padding: 26px;
+}
+
+.pub-links{
+    height: min-content;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.pub-image{
+    height: min-content;
+    grid-row: 1/2;
+}
+
+.pub-image img{
+    border-radius: 5px;
+    border: solid 2px black;
+}
+
+.pub-links-element{
+    margin-top: 10px;
+    width: 100%;
+    align-content: end;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: black;
+    border-radius: 5px;
+    transition: background 0.5s;
+    border: solid 2px black;
+}
+
+.pub-links-element:hover{
+    background-color: black;
+    color: white;
+    transition: background 0.5s;
+}
+
+.arxiv{
+    grid-column: 1/2;
+    width: 95%;
+    margin-right: 5%;
+    display: table-cell;
+    vertical-align: middle;}
+
+.revista{
+    grid-column: 2/3;
+    width: 95%;
+    margin-left: 5%;
+}
+
+.cites{
+    grid-column: 1/3;
 }
