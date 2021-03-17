@@ -1,0 +1,204 @@
+
+
+.container-cv-ext {
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns: 15px auto 15px ;
+    grid-template-rows: minmax(var(--top-spacing), auto) auto 20px;
+    height: 100%;
+}
+
+.container-cv {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: var(--second-bg-color);
+    border-radius: 15px;
+    align-content: end;
+    padding: 1cm;
+    padding-top: 0.5cm;
+}
+
+.container-cv h1 {
+    padding-top: 1cm;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-cv h1::before {
+    display: block;
+    content: " ";
+    margin-top: var(--top-spacing-neg);
+    height: var(--top-spacing);
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+.seccio-cv {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 1cm;
+    margin-top: 1cm;
+}
+
+.categoria-cv {
+    text-align: left;
+
+    border-bottom: black solid 1px;
+
+    padding-right: 0.5cm;
+    padding-top: 0.2cm;
+}
+
+.contingut-cv {
+    text-align: left;
+
+    padding-left: 0.5cm;
+    padding-top: 0.2cm;
+    padding-bottom: 0.2cm
+}
+@media (min-width: 1100px) {
+    .seccio-cv {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        display: grid;
+        grid-template-columns: 25% auto;
+        margin-bottom: 1cm;
+        margin-top: 1cm;
+    }
+    
+    .categoria-cv {
+        grid-column: 1/2;
+        text-align: right;
+    
+        border-right: black solid 1px;
+        border-bottom: none;
+        padding-right: 0.5cm;
+        padding-top: 0.2cm;
+    }
+    
+    .contingut-cv {
+        grid-column: 2/3;
+        text-align: left;
+    
+        padding-left: 0.5cm;
+        padding-top: 0.2cm;
+        padding-bottom: 0.2cm
+    }
+}
+
+
+.index-cv {
+    width: 5cm;
+    background-color: var(--second-bg-color);
+    border-radius: 15px;
+    margin-left: 1cm;
+    margin-top: var(--top-spacing);
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.icon {
+    text-align: center;
+}
+
+.element-cv {
+    background-color: var(--second-bg-color);
+    margin: 0.2cm;
+    height: 1.5cm;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    font-family: 'Concert One', cursive;
+    font-size: 18px;
+    text-justify: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--highlight-current);
+}
+
+.element-cv:hover {
+    background-color: var(--highlight-current);
+    color: black;
+    border-radius: 15px;
+    transition: background 0.5s;
+}
+
+
+
+@media (max-width: 1100px) {
+    .index-cv {
+        display: none;
+        /* background-color: unset;
+        width: 85%;
+        position: fixed;
+        bottom: 0cm;
+        left: 7%;
+        
+        border-radius: 15px;
+
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%; */
+    }
+}
+
+@media (min-width: 1100px) {
+    .container-cv-ext {
+        vertical-align: middle;
+        display: grid;
+        grid-template-columns: minmax(7cm,auto) minmax(810px,60%) minmax(7cm,auto) ;
+        grid-template-rows: minmax(var(--top-spacing), auto) auto minmax(var(--top-spacing), auto);
+        height: 100%;
+    }
+
+    
+
+    .icon {
+        text-align: center;
+    }
+
+    .element-cv {
+        height: 1.5cm;
+        margin: 0cm;
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        font-family: 'Concert One', cursive;
+        font-size: 18px;
+        padding: 0.2cm 0.4cm 0.2cm 0.4cm;
+        text-decoration: none;
+        color: black;
+        border: none;
+    }
+
+    .element-cv:hover {
+        background-color: var(--highlight-current);
+        color: black;
+        border-radius: 15px;
+        transition: background 0.5s;
+    }
+}
+
+
+.download-cv {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    float: right;
+    margin-top: 15px;
+    padding: 15px;
+    color: black;
+    border-radius: 5px;
+    transition: background 0.5s;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.download-cv:hover {
+    background-color: var(--highlight-current);
+    color: black;
+    transition: background 0.5s;
+}

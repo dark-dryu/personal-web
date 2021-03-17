@@ -1,0 +1,264 @@
+.navbar {
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+    background-color: var(--second-bg-color);
+    display: grid;
+    grid-template-columns: auto [start] minmax(0, 28cm) [end] auto;
+    padding: 0px;
+    border-bottom: var(--highlight-current) solid 10px;
+    z-index: 1;
+}
+
+
+
+.nav-items {
+    grid-column: start/end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 2cm;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.nav-link {
+    font-family: 'Concert One', cursive;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    display: grid;
+    height: 2cm;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+
+    justify-content: center;
+    align-content: end;
+
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link:hover {
+    background: var(--highlight);
+    transition: background 0.5s;
+    color: black;
+}
+
+
+.active-nav-link {
+    background-color: var(--highlight-current) ;
+    color: black;
+}
+
+#menuToggle{
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .navbar {
+        position: fixed;
+        /* Set the navbar to fixed position */
+        top: 0;
+        /* Position the navbar at the top of the page */
+        width: 100%;
+        /* Full width */
+        background-color: var(--second-bg-color);
+        display: grid;
+        grid-template-columns: auto [start] 100% [end] auto;
+        padding: 0px;
+        border-bottom: var(--highlight-current) solid 10px;
+        z-index: 1;
+    }
+    
+    .nav-items {
+        grid-column: start/end;
+        height: 2cm;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav-link {
+        font-family: 'Concert One', cursive;
+        font-size: 44px;
+        text-decoration: none;
+        color: black;
+        display: grid;
+        height: 1.7cm;
+        border: none;
+        transition: none;
+        /* border-bottom: 1px solid transparent; */
+        /* transition: border-bottom 0.5s; */
+        text-justify: center;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        padding: 0;
+        padding-top: 0.3cm;
+        /* padding-top: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 30px; */
+        border-end-end-radius: 0px;
+        border-end-start-radius: 0px;
+    
+        text-decoration: none;
+        transition: color 0.5s;
+        display: none;
+    }
+    
+    .nav-link:hover {
+        background: var(--highlight);
+        transition: background 0.5s;
+        color: black;
+    }
+    
+    
+    .active-nav-link {
+        background-color: none;
+        color: black;
+        display: unset;
+        padding-right: 0.5cm;
+        padding-left: 0.5cm;
+    }
+
+    #menuToggle {
+        display: block;
+        position: fixed;
+        top: 0.8cm;
+        right: 0.8cm;
+        
+        z-index: 10;
+        
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #menuToggle a{
+        text-decoration: none;
+        color: #232323;
+        
+        transition: color 0.3s ease;
+    }
+
+    #menuToggle a:hover{
+        color: tomato;
+    }
+
+
+    #menuToggle input{
+        display: block;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        
+        cursor: pointer;
+        
+        opacity: 0; /* hide this */
+        z-index: 11; /* and place it over the hamburger */
+        
+        -webkit-touch-callout: none;
+    }
+
+    #menu{
+        position: absolute;
+        width: 200px;
+        margin: 0.7cm 0 0 -170px;
+        padding: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+        background: var(--highlight-current);
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+        
+        transform-origin: 0 0;
+        transform: translate(100%, 0);
+
+        border-end-start-radius: 15px;
+        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    #menu li{
+        padding: 10px 0;
+        text-transform: uppercase;
+        font-family: 'Concert One', cursive;
+        font-size: 22px;
+    }
+
+
+    /* HAMBURGUERS */
+
+    #menuToggle span{
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        
+        background: var(--highlight-current);
+        border-radius: 3px;
+        
+        z-index: 10;
+        
+        transform-origin: 4px 0px;
+        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child{
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2){
+        transform-origin: 0% 100%;
+    }
+
+    /* 
+    * Transform all the slices of hamburger
+    * into a crossmark.
+    */
+    #menuToggle input:checked ~ span{
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: var(--highlight);
+    }
+
+    /*
+    * But let's hide the middle one.
+    */
+    #menuToggle input:checked ~ span:nth-last-child(3){
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /*
+    * Ohyeah and the last one should go the other direction
+    */
+    #menuToggle input:checked ~ span:nth-last-child(2){
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    /*
+    * And let's slide it in from the left
+    */
+    #menuToggle input:checked ~ ul{
+        transform: none;
+    }
+}

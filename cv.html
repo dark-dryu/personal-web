@@ -7,37 +7,74 @@
     <title>Andreu Anglés-Castillo</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/nav-bar.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/cv.css">
     <script src="javascript/top-button.js"></script>
-    
+
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="navbar">
         <div class="nav-items">
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link ">Home</a>
             <a href="cv.html" class="nav-link active-nav-link">CV</a>
             <a href="publications.html" class="nav-link">Publications</a>
-            <a href="about.html" class="nav-link">Teaching</a>
-            <a href="about.html" class="nav-link">Blog</a>
-            <a href="about.html" class="nav-link">Code</a>
+            <a href="teaching.html" class="nav-link">Teaching</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="code.html" class="nav-link">Code</a>
         </div>
     </div>
-    <div class="container">
+    <div id="menuToggle">
+        <input type="checkbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <a href="cv.html"><li>Curriculum Vitae</li></a>
+          <a href="publications.html"><li>Publications</li></a>
+          <a href="teaching.html"><li>Teaching</li></a>
+          <a href="blog.html"><li>Blog</li></a>
+          <a href="code.html"><li>Code</li></a>
+        </ul>
+    </div>
 
-        <div class="index-cv">
-            <a class="element-cv" href="#cv-personal"><div class="icon"><p><i class="fa fa-user fa-lg"></i></p></div> <p>Personal Info</p></a>
-            <a class="element-cv" href="#cv-education"><div class="icon"><p><i class="fa fa-mortar-board fa-lg"></i></p></div> <p>Education</p></a>
-            <a class="element-cv" href="#cv-research"><div class="icon"><p><i class="fa fa-flask fa-lg"></i></p></div> <p>Research</p></a>
-            <a class="element-cv" href="#cv-conferences"><div class="icon"><p><i class="fa fa-group fa-lg"></i></p></div> <p>Conferences</p></a>
-        </div>
+    <div class="index-cv">
+        <a class="element-cv" href="#cv-personal">
+            <div class="icon">
+                <p><i class="fa fa-user fa-lg"></i></p>
+            </div>
+            <p>Personal Info</p>
+        </a>
+        <a class="element-cv" href="#cv-education">
+            <div class="icon">
+                <p><i class="fa fa-mortar-board fa-lg"></i></p>
+            </div>
+            <p>Education</p>
+        </a>
+        <a class="element-cv" href="#cv-research">
+            <div class="icon">
+                <p><i class="fa fa-flask fa-lg"></i></p>
+            </div>
+            <p>Research</p>
+        </a>
+        <a class="element-cv" href="#cv-conferences">
+            <div class="icon">
+                <p><i class="fa fa-group fa-lg"></i></p>
+            </div>
+            <p>Conferences</p>
+        </a>
+    </div>
 
+    <div class="container-cv-ext">
         <div class="container-cv">
-            <a class="download-cv" href="assets/files/TFM.pdf" download><i class="fa fa-file-pdf-o fa-lg"></i> PDF</a>
+            <a class="download-cv" href="assets/files/CV.pdf" download><i class="fa fa-file-pdf-o fa-lg"></i> PDF</a>
 
             <h1 id="cv-personal">Personal details</h1>
 
@@ -55,7 +92,7 @@
                 <div class="categoria-cv">Contact</div>
                 <div class="contingut-cv">Work: <a href="mailto:andreu.angles@ific.uv.es">Andreu.Angles@ific.uv.es</a>
                     <br> Personal: <a href="mailto:andreu.angles@ific.uv.es">andreu@angles-castillo.com</a>
-                    <br>(+34) 652768388</div>
+                    <br> <i class="fa fa-phone"></i>: (+34) 652768388</div>
             </div>
 
 
@@ -70,26 +107,26 @@
 
             <div class="seccio-cv">
                 <div class="categoria-cv">Master in Advanced Physics<br>2017-2018</div>
-                <div class="contingut-cv">University: Universitat de València<br>Location: València, Spain 
+                <div class="contingut-cv">University: Universitat de València<br>Location: València, Spain
                     <br>Average score: 9.46
                     <br>Thesis title: An open quantum system coupled to an open environment (<a href="assets/files/TFM.pdf" download>PDF</a>) </div>
             </div>
 
             <div class="seccio-cv">
                 <div class="categoria-cv">Degree in Physics<br>2013-2017</div>
-                <div class="contingut-cv">University: Universitat de València<br>Location: València, Spain 
-                    <br>Average score: 8.74<br> Subjects with honors: 6 (including TFG) 
+                <div class="contingut-cv">University: Universitat de València<br>Location: València, Spain
+                    <br>Average score: 8.74<br> Subjects with honors: 6 (including TFG)
                     <br>Thesis title: Stationary models of extragalactic jets (<a href="assets/files/TFG.pdf" download>PDF</a>) </div>
             </div>
 
-            
+
 
             <h1 id="cv-research">Research</h1>
-            
+
             <div class="seccio-cv">
                 <div class="categoria-cv">Research Interests</div>
                 <div class="contingut-cv">Open Quantum Systems<br>Quantum Walks<br>Quantum Thermodynamics<br>Quantum Computation<br>
-                Foundations of Quantum Mechanics</div>
+                    Foundations of Quantum Mechanics</div>
             </div>
 
             <div class="seccio-cv">
@@ -100,11 +137,17 @@
             </div>
 
             <h1 id="cv-conferences">Conferences</h1>
-            
             <div class="seccio-cv">
-                <div class="categoria-cv">2019 October</div>
+                <div class="categoria-cv">January 2020</div>
+                <div class="contingut-cv">IBM Quantum Teach The Researcher<br>28-30 January<br>Yorktown Heighs, United States<br>
+                    <a href="assets/files/Congresos/VQE_Course_Certificate_Castillo.pdf" download>Certificate</a> 
+                </div>
+            </div>
+            <div class="seccio-cv">
+                <div class="categoria-cv">October 2019</div>
                 <div class="contingut-cv">Quantum Simulation and Computation (QsC 2019)<br>14-18 October<br>Madrid, Spain<br>
-                    <a href="https://qsc2019.hbar.es/">https://qsc2019.hbar.es</a><br><a href="/assets/files/QsC2019.pdf" download>Certificate</a>                </div>
+                    <a href="https://qsc2019.hbar.es/">https://qsc2019.hbar.es</a><br><a href="assets/files/Congresos/QsC2019.pdf" download>Certificate</a> 
+                </div>
             </div>
 
         </div>

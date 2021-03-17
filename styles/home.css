@@ -1,0 +1,100 @@
+
+
+.container {
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-rows: minmax(var(--top-spacing), auto) auto minmax(2cm, auto);
+    height: 100%;
+}
+
+.quadrat {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: auto 90% auto;
+    background-color: var(--second-bg-color);
+    border-radius: 15px;
+    align-content: end;
+}
+
+.cover-photo {
+    grid-column: 1/2;
+    max-width: 10cm;
+    margin: 1cm;
+    border-left: 3px black;
+    opacity: unset;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+@media (max-width: 850px) {
+    .cover-photo {
+        position: absolute;
+        margin:0;
+        top: 4.5cm;
+        right: 1cm;
+        height: 3cm;
+        width: 3cm;
+        opacity: unset;
+        border-radius: 1.5cm;
+        border-style: solid;
+        border-width: 3px;
+        border-color: var(--highlight-current);
+    }
+}
+
+.descripcio-personal {
+    grid-column: 2/3;
+    margin: 0.5cm;
+    margin-left: 0.9cm;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+}
+
+
+
+@media (min-width: 850px) {
+    .container {
+        vertical-align: middle;
+        display: grid;
+        grid-template-columns: minmax(20px,auto) minmax(810px,60%) minmax(20px,auto) ;
+        grid-template-rows: minmax(var(--top-spacing), auto) auto auto;
+        height: 100%;
+    }
+
+    .quadrat {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 1fr [start] auto [end] 1fr 1fr;
+        background-color: var(--second-bg-color);
+        border-radius: 15px;
+        align-content: end;
+        position: unset;
+    }
+
+
+
+    .columnDivider {
+        grid-column: start/end;
+        border-right: 1px solid black;
+        margin-top: 1cm;
+        margin-bottom: 1cm;
+    }
+
+    .descripcio-personal {
+        grid-column: 3/5;
+        margin: 0.5cm;
+        margin-left: 0.9cm;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14pt;
+    }
+
+}
+
+.icono-datos {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    line-height: 1.3;
+}

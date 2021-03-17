@@ -7,7 +7,19 @@
     <title>Andreu Anglés-Castillo</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/nav-bar.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/cv.css">
+    <link rel="stylesheet" href="styles/pubs.css">
     <script src="javascript/top-button.js"></script>
+    <script src="javascript/readMoreFunc.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+    MathJax = {
+      tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet"> 
@@ -19,33 +31,60 @@
 <body>
     <div class="navbar">
         <div class="nav-items">
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link ">Home</a>
             <a href="cv.html" class="nav-link">CV</a>
             <a href="publications.html" class="nav-link active-nav-link">Publications</a>
-            <a href="about.html" class="nav-link">Teaching</a>
-            <a href="about.html" class="nav-link">Blog</a>
-            <a href="about.html" class="nav-link">Code</a>
+            <a href="teaching.html" class="nav-link">Teaching</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="code.html" class="nav-link">Code</a>
         </div>
     </div>
-    <div class="container">
-        <div class="index-cv">
-            <a class="element-cv" href="#2021"> <p>2021</p></a>
-            <a class="element-cv" href="#2020"> <p>2020</p></a>        
-        </div>
+    <div id="menuToggle">
+        <input type="checkbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <a href="cv.html"><li>Curriculum Vitae</li></a>
+          <a href="publications.html"><li>Publications</li></a>
+          <a href="teaching.html"><li>Teaching</li></a>
+          <a href="blog.html"><li>Blog</li></a>
+          <a href="code.html"><li>Code</li></a>
+        </ul>
+    </div>
 
+    <div class="index-cv">
+        <a class="element-cv" href="#2021"> <p>2021</p></a>
+        <a class="element-cv" href="#2020"> <p>2020</p></a>        
+    </div>
+
+    <div class="container-pub-ext">
         <div class="container-pub">
             <h1 id="2020">2020</h1>
+            <div class="publication-entry">
+                <div class="pub-title">On the deceleration of Fanaroff-Riley Class I jets: mass loading of magnetized jets by stellar winds. </div>
+                <div class="pub-im-link">
+                    <div class="pub-image"><img src="assets/files/Publications/jets.png" width=100%></div>
+                    <div class="pub-links">
+                        <a class="pub-links-element arxiv" href="https://arxiv.org/abs/2010.10234">arXiv</a>
+                        <a class="pub-links-element revista" href="https://doi.org/10.1093/mnras/staa3291">MNRAS</a>
+                        <!-- <a class="pub-links-element cites">Citations: </a> -->
+                    </div>
+                </div>
+                <div class="pub-abstract">In this paper, we present steady-state relativistic magnetohydrodynamic simulations that include a mass-load term to study the process of jet deceleration. The mass load mimics the injection of a proton–electron plasma from stellar winds within the host galaxy into initially pair plasma jets, with mean stellar mass-losses ranging from $10^{-14}$ to $10^{-9}\,{M_\odot\,yr^{-1}}$⁠. The spatial jet evolution covers ∼ 500pc from jet injection in the grid at 10 pc from the jet nozzle. Our simulations use a relativistic gas equation of state and a pressure profile for the ambient medium. We compare these simulations with previous dynamical simulations of relativistic, non-magnetized jets. Our results show <span id="dots3"></span><span id="more3">that toroidal magnetic fields can prevent fast jet expansion and the subsequent embedding of further stars via magnetic tension. In this sense, magnetic fields avoid a runaway deceleration process. Furthermore, when the mass load is large enough to increase the jet density and produce fast, differential jet expansion, the conversion of magnetic energy flux into kinetic energy flux (i.e. magnetic acceleration), helps to delay the deceleration process with respect to non-magnetized jets. We conclude that the typical stellar population in elliptical galaxies cannot explain jet deceleration in classical Fanaroff–Riley type I radio galaxies. However, we observe a significant change in the jet composition, thermodynamical parameters, and energy dissipation along its evolution, even for moderate values of the mass load.</span><button onclick="readMoreFunc3()" id="BtnReadMore3" class="RMLbut"> ··· </button></div>
+            </div>
             <div class="publication-entry">
                 <div class="pub-title">Prethermalization of quantum systems interacting with non-equilibrium environments </div>
                 <div class="pub-im-link">
                     <div class="pub-image"><img src="assets/files/Publications/OQS.jpeg" width=100%></div>
                     <div class="pub-links">
                         <a class="pub-links-element arxiv" href="https://arxiv.org/abs/2005.07437">arXiv</a>
-                        <!-- <a class="pub-links-element revista" href="">Journal of Physics A</a> -->
+                        <a class="pub-links-element revista" href="https://dx.doi.org/10.1088/1367-2630/aba7f4">New Journal of Physics</a>
                         <!-- <a class="pub-links-element cites">Citations: </a> -->
                     </div>
                 </div>
-                <div class="pub-abstract">The usual paradigm of open quantum systems falls short when the environment is actually coupled to additional fields or components that drive it out of equilibrium. Here we explore the simplest such scenario, by considering a two level system coupled to a first thermal reservoir that in turn couples to a second thermal bath at a different temperature. We derive a master equation description for the system and show that, in this situation, the dynamics can be especially rich. In particular, we observe prethermalization, a transitory phenomenon in which the system initially approaches thermal equilibrium with respect to the first reservoir, but after a longer time converges to the thermal state dictated by the temperature of the second environment. Using analytical arguments and numerical simulations, we analyze the occurrence of this phenomenon, and how it depends on temperatures and coupling strengths. The phenomenology gets even richer if the system is placed between two such non-equilibrium environments. In this case, the energy current through the system may exhibit transient features and even switch direction, before the system eventually reaches a non-equilibrium steady state. </div>
+                <div class="pub-abstract">The usual paradigm of open quantum systems falls short when the environment is actually coupled to additional fields or components that drive it out of equilibrium. Here we explore the simplest such scenario, by considering a two level system coupled to a first thermal reservoir that in turn couples to a second thermal bath at a different temperature. We derive a master equation description for the system and show that, in this situation, the dynamics can be especially rich. In particular, we observe prethermalization, a transitory phenomenon in which the system initially approaches thermal equilibrium with respect to the first reservoir, but after a longer time converges to the thermal state dictated by the temperature of the second environment. Using analytical arguments <span id="dots2"></span><span id="more2"> and numerical simulations, we analyze the occurrence of this phenomenon, and how it depends on temperatures and coupling strengths. The phenomenology gets even richer if the system is placed between two such non-equilibrium environments. In this case, the energy current through the system may exhibit transient features and even switch direction, before the system eventually reaches a non-equilibrium steady state.</span><button onclick="readMoreFunc2()" id="BtnReadMore2" class="RMLbut">···</button></div>
             </div>
 
             <div class="publication-entry">
@@ -57,8 +96,9 @@
                         <a class="pub-links-element revista" href="https://iopscience.iop.org/article/10.1088/1751-8121/ab8245/meta">Journal of Physics A</a>
                         <!-- <a class="pub-links-element cites">Citations: </a> -->
                     </div>
-                </div>
-                <div class="pub-abstract">Two models are first presented, of one-dimensional discrete-time quantum walk (DTQW) with temporal noise on the internal degree of freedom (i.e., the coin): (i) a model with both a coin-flip and a phase-flip channel, and (ii) a model with random coin unitaries. It is then shown that both these models admit a common limit in the spacetime continuum, namely, a Lindblad equation with Dirac-fermion Hamiltonian part and, as Lindblad jumps, a chirality flip and a chirality-dependent phase flip, which are two of the three standard error channels for a two-level quantum system. This, as one may call it, Dirac Lindblad equation, provides a model of quantum relativistic spatial diffusion, which is evidenced both analytically and numerically. This model of spatial diffusion has the intriguing specificity of making sense only with original unitary models which are relativistic in the sense that they have chirality, on which the noise is introduced: The diffusion arises via the by-construction (quantum) coupling of chirality to the position. For a particle with vanishing mass, the model of quantum relativistic diffusion introduced in the present work, reduces to the well-known telegraph equation, which yields propagation at short times, diffusion at long times, and exhibits no quantumness. Finally, the results are extended to temporal noises which depend smoothly on position.</div>            
+                </div> 
+
+                <div class="pub-abstract">Two models are first presented, of one-dimensional discrete-time quantum walk (DTQW) with temporal noise on the internal degree of freedom (i.e., the coin): (i) a model with both a coin-flip and a phase-flip channel, and (ii) a model with random coin unitaries. It is then shown that both these models admit a common limit in the spacetime continuum, namely, a Lindblad equation with Dirac-fermion Hamiltonian part and, as Lindblad jumps, a chirality flip and a chirality-dependent phase flip, which are two of the three standard error channels for a two-level quantum system. This, as one may call it, Dirac Lindblad equation, provides <span id="dots1"></span><span id="more1">a model of quantum relativistic spatial diffusion, which is evidenced both analytically and numerically. This model of spatial diffusion has the intriguing specificity of making sense only with original unitary models which are relativistic in the sense that they have chirality, on which the noise is introduced: The diffusion arises via the by-construction (quantum) coupling of chirality to the position. For a particle with vanishing mass, the model of quantum relativistic diffusion introduced in the present work, reduces to the well-known telegraph equation, which yields propagation at short times, diffusion at long times, and exhibits no quantumness. Finally, the results are extended to temporal noises which depend smoothly on position.</span><button onclick="readMoreFunc1()" id="BtnReadMore1" class="RMLbut">···</button></div>         
             </div>
         </div>
 
