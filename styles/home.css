@@ -1,4 +1,6 @@
-
+.orcid{
+    grid-column: 1/3;
+}
 
 .container {
     vertical-align: middle;
@@ -50,6 +52,7 @@
     margin-left: 0.9cm;
     font-family: 'Roboto', sans-serif;
     font-size: 14pt;
+    color: var(--font-color);
 }
 
 
@@ -78,7 +81,7 @@
 
     .columnDivider {
         grid-column: start/end;
-        border-right: 1px solid black;
+        border-right: 1px solid var(--font-color);
         margin-top: 1cm;
         margin-bottom: 1cm;
     }

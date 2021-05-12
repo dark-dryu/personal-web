@@ -3,17 +3,19 @@
     --top-spacing-neg: -5cm;
 
     --main-bg-color: #EDAE49;
-    --second-bg-color: #00798C;
+    --second-bg-color: #3E96A4;
     --highlight: #D1495B;
     --highlight-current: #EDAE49;
-    --grey: #8E8D89;
-    --color-antic: rgba(128, 128, 128, 0.9);
+    --font-color: black;
+    --font-color-inv: white;
+    --bg-img: url("../assets/pissarra-blur-light.jpg");
 }
 
 body {
     margin: 0px;
     /* background-color: var(--main-bg-color); */
-    background-image: url("../assets/pissarra-blur-2.jpg");
+    background-image: var(--bg-img);
+    /* background-color: var(--main-bg-color); */
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-size: cover;
@@ -24,15 +26,13 @@ a {
 }
 
 
-#myBtn {
+.Btn {
     position: fixed;
-    /* margin-right: 3.5%; */
-    right: 3.5%;
     bottom: 20px;
     z-index: 99;
 
     background-color: var(--second-bg-color);
-    color: black;
+    color: var(--font-color);
 
     border-radius: 15px;
     font-size: 18px;
@@ -45,36 +45,42 @@ a {
     padding: 15px;
 }
 
-#myBtn:hover {
+.Btn:hover {
     background-color: var(--highlight-current);
-    color: black;
+    color: var(--font-color);
     transition: background 0.5s;
 }
 
+.themeBtn {
+    right: 3.5%;
+}
+
+.topBtn {
+    right: 3.5%;
+    bottom: 80px;
+}
+
 @media (min-width: 1100px) {
-    #myBtn {
-        position: fixed;
+    .Btn {
         right: unset;
-        left: 1cm;
         margin-left: 0cm;
         bottom: 1cm;
         z-index: 99;
-    
-        background-color: var(--second-bg-color);
-        color: black;
-    
         border-radius: 15px;
         font-size: 18px;
         width: 52px;
-        border: none;
         outline: none;
         cursor: pointer;
         padding: 15px;
     }
-    
-    #myBtn:hover {
-        background-color: var(--highlight-current);
-        color: black;
-        transition: background 0.5s;
+
+    .topBtn {
+        left: 3cm;
+
+    }
+
+    .themeBtn {
+        left: 1cm;
+        padding-left: 14px;
     }
 }

@@ -13,22 +13,28 @@
     <link rel="stylesheet" href="styles/pubs.css">
     <script src="javascript/top-button.js"></script>
     <script src="javascript/readMoreFunc.js"></script>
+    <script src="javascript/theme.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script>
-    MathJax = {
-      tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-    };
+        MathJax = {
+            tex: {
+                inlineMath: [
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ]
+            }
+        };
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-    
+
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="javascript:loadTheme()">
     <div class="navbar">
         <div class="nav-items">
             <a href="index.html" class="nav-link ">Home</a>
@@ -36,32 +42,82 @@
             <a href="publications.html" class="nav-link active-nav-link">Publications</a>
             <a href="teaching.html" class="nav-link">Teaching</a>
             <a href="blog.html" class="nav-link">Blog</a>
-            <a href="code.html" class="nav-link">Code</a>
+            <a href="code.html" class="nav-link">Code <i class="fa fa-github fa-lg"></i></a>
         </div>
     </div>
     <div id="menuToggle">
-        <input type="checkbox"/>
+        <input type="checkbox" />
         <span></span>
         <span></span>
         <span></span>
         <ul id="menu">
-          <a href="index.html"><li>Home</li></a>
-          <a href="cv.html"><li>Curriculum Vitae</li></a>
-          <a href="publications.html"><li>Publications</li></a>
-          <a href="teaching.html"><li>Teaching</li></a>
-          <a href="blog.html"><li>Blog</li></a>
-          <a href="code.html"><li>Code</li></a>
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="cv.html">
+                <li>Curriculum Vitae</li>
+            </a>
+            <a href="publications.html">
+                <li>Publications</li>
+            </a>
+            <a href="teaching.html">
+                <li>Teaching</li>
+            </a>
+            <a href="blog.html">
+                <li>Blog</li>
+            </a>
+            <a href="code.html">
+                <li>Code</li>
+            </a>
         </ul>
     </div>
 
     <div class="index-cv">
-        <a class="element-cv" href="#2021"> <p>2021</p></a>
-        <a class="element-cv" href="#2020"> <p>2020</p></a>        
+        <a class="element-cv" href="#y2021">
+            <p>2021</p>
+        </a>
+        <a class="element-cv" href="#y2020">
+            <p>2020</p>
+        </a>
     </div>
 
     <div class="container-pub-ext">
         <div class="container-pub">
-            <h1 id="2020">2020</h1>
+
+
+            <h1 id="y2021">2021</h1>
+
+            <div class="publication-entry">
+                <div class="pub-title">[Preprint] A quantum walk simulation of extra dimensions with warped geometry</div>
+                <div class="pub-im-link">
+                    <div class="pub-image"><img src="assets/files/Publications/branes.png" width=100%></div>
+                    <div class="pub-links">
+                        <a class="pub-links-element arxiv" href="https://arxiv.org/abs/2105.01375">arXiv</a>
+                        <!-- <a class="pub-links-element revista" href="https://iopscience.iop.org/article/10.1088/1751-8121/ab8245/meta">Journal of Physics A</a> -->
+                        <!-- <a class="pub-links-element cites">Citations: </a> -->
+                    </div>
+                </div>
+                <div class="pub-abstract">We investigate the properties of a quantum walk which can simulate
+                    the behavior of a spin $1/2$ particle in a model with an ordinary
+                    spatial dimension, and one extra dimension with warped geometry between
+                    two branes. Such a setup constitutes a $1+1$ dimensional version
+                    of the Randall-Sundrum model, which plays an important role in high
+                    energy physics. In the continuum spacetime limit, the quantum walk
+                    reproduces the Dirac equation corresponding to the model, which allows
+                    to anticipate some of the properties that can be reproduced by the
+                    quantum walk. <span id="dots4"></span><span id="more4"> In particular, we observe that the probability distribution
+                        becomes, at large time steps, concentrated near the "low
+                        energy" brane, and can be approximated as the lowest
+                        eigenstate of the continuum Hamiltonian that is compatible with the
+                        symmetries of the model. In this way, we obtain a localization effect
+                        whose strength is controlled by a warp coefficient. In other
+                        words, here localization arises from the geometry of the model, at
+                        variance with the usual effect that is originated from random irregularities,
+                        as in Anderson localization. In summary, we establish an interesting
+                        correspondence between a high energy physics model and localization
+                        in quantum walks. </span><button onclick="readMoreFunc4()" id="BtnReadMore4" class="RMLbut">···</button></div>
+            </div>
+
             <div class="publication-entry">
                 <div class="pub-title">On the deceleration of Fanaroff-Riley Class I jets: mass loading of magnetized jets by stellar winds. </div>
                 <div class="pub-im-link">
@@ -74,6 +130,7 @@
                 </div>
                 <div class="pub-abstract">In this paper, we present steady-state relativistic magnetohydrodynamic simulations that include a mass-load term to study the process of jet deceleration. The mass load mimics the injection of a proton–electron plasma from stellar winds within the host galaxy into initially pair plasma jets, with mean stellar mass-losses ranging from $10^{-14}$ to $10^{-9}\,{M_\odot\,yr^{-1}}$⁠. The spatial jet evolution covers ∼ 500pc from jet injection in the grid at 10 pc from the jet nozzle. Our simulations use a relativistic gas equation of state and a pressure profile for the ambient medium. We compare these simulations with previous dynamical simulations of relativistic, non-magnetized jets. Our results show <span id="dots3"></span><span id="more3">that toroidal magnetic fields can prevent fast jet expansion and the subsequent embedding of further stars via magnetic tension. In this sense, magnetic fields avoid a runaway deceleration process. Furthermore, when the mass load is large enough to increase the jet density and produce fast, differential jet expansion, the conversion of magnetic energy flux into kinetic energy flux (i.e. magnetic acceleration), helps to delay the deceleration process with respect to non-magnetized jets. We conclude that the typical stellar population in elliptical galaxies cannot explain jet deceleration in classical Fanaroff–Riley type I radio galaxies. However, we observe a significant change in the jet composition, thermodynamical parameters, and energy dissipation along its evolution, even for moderate values of the mass load.</span><button onclick="readMoreFunc3()" id="BtnReadMore3" class="RMLbut"> ··· </button></div>
             </div>
+            <h1 id="y2020">2020</h1>
             <div class="publication-entry">
                 <div class="pub-title">Prethermalization of quantum systems interacting with non-equilibrium environments </div>
                 <div class="pub-im-link">
@@ -96,13 +153,14 @@
                         <a class="pub-links-element revista" href="https://iopscience.iop.org/article/10.1088/1751-8121/ab8245/meta">Journal of Physics A</a>
                         <!-- <a class="pub-links-element cites">Citations: </a> -->
                     </div>
-                </div> 
+                </div>
 
-                <div class="pub-abstract">Two models are first presented, of one-dimensional discrete-time quantum walk (DTQW) with temporal noise on the internal degree of freedom (i.e., the coin): (i) a model with both a coin-flip and a phase-flip channel, and (ii) a model with random coin unitaries. It is then shown that both these models admit a common limit in the spacetime continuum, namely, a Lindblad equation with Dirac-fermion Hamiltonian part and, as Lindblad jumps, a chirality flip and a chirality-dependent phase flip, which are two of the three standard error channels for a two-level quantum system. This, as one may call it, Dirac Lindblad equation, provides <span id="dots1"></span><span id="more1">a model of quantum relativistic spatial diffusion, which is evidenced both analytically and numerically. This model of spatial diffusion has the intriguing specificity of making sense only with original unitary models which are relativistic in the sense that they have chirality, on which the noise is introduced: The diffusion arises via the by-construction (quantum) coupling of chirality to the position. For a particle with vanishing mass, the model of quantum relativistic diffusion introduced in the present work, reduces to the well-known telegraph equation, which yields propagation at short times, diffusion at long times, and exhibits no quantumness. Finally, the results are extended to temporal noises which depend smoothly on position.</span><button onclick="readMoreFunc1()" id="BtnReadMore1" class="RMLbut">···</button></div>         
+                <div class="pub-abstract">Two models are first presented, of one-dimensional discrete-time quantum walk (DTQW) with temporal noise on the internal degree of freedom (i.e., the coin): (i) a model with both a coin-flip and a phase-flip channel, and (ii) a model with random coin unitaries. It is then shown that both these models admit a common limit in the spacetime continuum, namely, a Lindblad equation with Dirac-fermion Hamiltonian part and, as Lindblad jumps, a chirality flip and a chirality-dependent phase flip, which are two of the three standard error channels for a two-level quantum system. This, as one may call it, Dirac Lindblad equation, provides <span id="dots1"></span><span id="more1">a model of quantum relativistic spatial diffusion, which is evidenced both analytically and numerically. This model of spatial diffusion has the intriguing specificity of making sense only with original unitary models which are relativistic in the sense that they have chirality, on which the noise is introduced: The diffusion arises via the by-construction (quantum) coupling of chirality to the position. For a particle with vanishing mass, the model of quantum relativistic diffusion introduced in the present work, reduces to the well-known telegraph equation, which yields propagation at short times, diffusion at long times, and exhibits no quantumness. Finally, the results are extended to temporal noises which depend smoothly on position.</span><button onclick="readMoreFunc1()" id="BtnReadMore1" class="RMLbut">···</button></div>
             </div>
         </div>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up fa-lg"></i></button>
+        <button onclick="topFunction()" class="Btn topBtn" title="Go to top"><i class="fa fa-angle-up fa-lg"></i></button>
+        <button onclick="toggleTheme()" class="Btn themeBtn" title="themeswitcher`"><i class="fa  fa-adjust fa-lg"></i></button>
     </div>
 
 

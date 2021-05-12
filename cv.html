@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/cv.css">
     <script src="javascript/top-button.js"></script>
+    <script src="javascript/theme.js"></script>
+
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
@@ -19,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="javascript:loadTheme()">
     <div class="navbar">
         <div class="nav-items">
             <a href="index.html" class="nav-link ">Home</a>
@@ -27,21 +29,33 @@
             <a href="publications.html" class="nav-link">Publications</a>
             <a href="teaching.html" class="nav-link">Teaching</a>
             <a href="blog.html" class="nav-link">Blog</a>
-            <a href="code.html" class="nav-link">Code</a>
+            <a href="code.html" class="nav-link">Code <i class="fa fa-github fa-lg"></i></a>
         </div>
     </div>
     <div id="menuToggle">
-        <input type="checkbox"/>
+        <input type="checkbox" />
         <span></span>
         <span></span>
         <span></span>
         <ul id="menu">
-          <a href="index.html"><li>Home</li></a>
-          <a href="cv.html"><li>Curriculum Vitae</li></a>
-          <a href="publications.html"><li>Publications</li></a>
-          <a href="teaching.html"><li>Teaching</li></a>
-          <a href="blog.html"><li>Blog</li></a>
-          <a href="code.html"><li>Code</li></a>
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="cv.html">
+                <li>Curriculum Vitae</li>
+            </a>
+            <a href="publications.html">
+                <li>Publications</li>
+            </a>
+            <a href="teaching.html">
+                <li>Teaching</li>
+            </a>
+            <a href="blog.html">
+                <li>Blog</li>
+            </a>
+            <a href="code.html">
+                <li>Code</li>
+            </a>
         </ul>
     </div>
 
@@ -52,17 +66,17 @@
             </div>
             <p>Personal Info</p>
         </a>
+        <a class="element-cv" href="#cv-research">
+            <div class="icon">
+                <p><i class="fa fa-university fa-lg"></i></p>
+            </div>
+            <p>Affilliations</p>
+        </a>
         <a class="element-cv" href="#cv-education">
             <div class="icon">
                 <p><i class="fa fa-mortar-board fa-lg"></i></p>
             </div>
             <p>Education</p>
-        </a>
-        <a class="element-cv" href="#cv-research">
-            <div class="icon">
-                <p><i class="fa fa-flask fa-lg"></i></p>
-            </div>
-            <p>Research</p>
         </a>
         <a class="element-cv" href="#cv-conferences">
             <div class="icon">
@@ -85,16 +99,29 @@
 
             <div class="seccio-cv">
                 <div class="categoria-cv">Addres</div>
-                <div class="contingut-cv">Avinguda Constitució, 127, 6A<br>46009, València<br> València, Spain</div>
+                <div class="contingut-cv">Facultat de Física (Bloc D), Office 4300<br>C/ Dr. Moliner, 50<br>46100, Burjassot, València, Spain</div>
             </div>
 
             <div class="seccio-cv">
                 <div class="categoria-cv">Contact</div>
                 <div class="contingut-cv">Work: <a href="mailto:andreu.angles@ific.uv.es">Andreu.Angles@ific.uv.es</a>
-                    <br> Personal: <a href="mailto:andreu.angles@ific.uv.es">andreu@angles-castillo.com</a>
-                    <br> <i class="fa fa-phone"></i>: (+34) 652768388</div>
+                    <br> <i class="fa fa-phone"></i>: (+34) 963543759</div>
             </div>
 
+            <div class="seccio-cv">
+                <div class="categoria-cv">Research Interests</div>
+                <div class="contingut-cv">Open Quantum Systems<br>Quantum Walks<br>Quantum Thermodynamics<br>Quantum Computation<br>
+                    Foundations of Quantum Mechanics</div>
+            </div>
+
+            <h1 id="cv-research">Affilliations</h1>
+
+            <div class="seccio-cv">
+                <div class="categoria-cv">2019-present</div>
+                <div class="contingut-cv">Elementary Particles: the Standard Model and Beyond<br> Ref: FPA2017-84543-P<br>Research line: Quantum Information<br>
+                    Position: PhD studend<br><a href="https://indico.ific.uv.es/event/3576/contributions/10395/attachments/6860/7909/we-ific2019m.pdf">Presentation</a>
+                </div>
+            </div>
 
             <h1 id="cv-education">Education</h1>
 
@@ -120,39 +147,33 @@
             </div>
 
 
-
-            <h1 id="cv-research">Research</h1>
-
+            <h1 id="cv-conferences">Conferences</h1>
             <div class="seccio-cv">
-                <div class="categoria-cv">Research Interests</div>
-                <div class="contingut-cv">Open Quantum Systems<br>Quantum Walks<br>Quantum Thermodynamics<br>Quantum Computation<br>
-                    Foundations of Quantum Mechanics</div>
-            </div>
-
-            <div class="seccio-cv">
-                <div class="categoria-cv">2019-present</div>
-                <div class="contingut-cv">Elementary Particles: the Standard Model and Beyond<br> Ref: FPA2017-84543-P<br>Research line: Quantum Information<br>
-                    Position: PhD studend<br><a href="https://indico.ific.uv.es/event/3576/contributions/10395/attachments/6860/7909/we-ific2019m.pdf">Presentation</a>
+                <div class="categoria-cv">May 2021</div>
+                <div class="contingut-cv">Quantum Information in Spain (ICE) - 6th edition<br>10-14 May, Online<br>
+                   
+                    Talk: Prethermalization of quantum systems interacting with non-equilibrium environments  <a href="assets/files/Congresos/ICE 6/ICE 6.zip" download>Slides</a> <br>
+                    <a href="https://drive.google.com/file/d/12CVGSkkOxfF1SLq4uipFIwc0OMPs2-ZS/view" download>Recording</a> (01:09:15 - 01:31:10)
                 </div>
             </div>
-
-            <h1 id="cv-conferences">Conferences</h1>
             <div class="seccio-cv">
                 <div class="categoria-cv">January 2020</div>
                 <div class="contingut-cv">IBM Quantum Teach The Researcher<br>28-30 January<br>Yorktown Heighs, United States<br>
-                    <a href="assets/files/Congresos/VQE_Course_Certificate_Castillo.pdf" download>Certificate</a> 
+                    <a href="assets/files/Congresos/VQE_Course_Certificate_Castillo.pdf" download>Certificate</a>
                 </div>
             </div>
             <div class="seccio-cv">
                 <div class="categoria-cv">October 2019</div>
                 <div class="contingut-cv">Quantum Simulation and Computation (QsC 2019)<br>14-18 October<br>Madrid, Spain<br>
-                    <a href="https://qsc2019.hbar.es/">https://qsc2019.hbar.es</a><br><a href="assets/files/Congresos/QsC2019.pdf" download>Certificate</a> 
+                    <a href="https://qsc2019.hbar.es/">https://qsc2019.hbar.es</a><br><a href="assets/files/Congresos/QsC2019.pdf" download>Certificate</a>
                 </div>
             </div>
 
         </div>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up fa-lg"></i></button>
+
+        <button onclick="topFunction()" class="Btn topBtn" title="Go to top"><i class="fa fa-angle-up fa-lg"></i></button>
+        <button onclick="toggleTheme()" class="Btn themeBtn" title="themeswitcher`"><i class="fa  fa-adjust fa-lg"></i></button>
     </div>
 
 

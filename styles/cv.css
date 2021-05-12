@@ -1,9 +1,7 @@
-
-
 .container-cv-ext {
     vertical-align: middle;
     display: grid;
-    grid-template-columns: 15px auto 15px ;
+    grid-template-columns: 15px auto 15px;
     grid-template-rows: minmax(var(--top-spacing), auto) auto 20px;
     height: 100%;
 }
@@ -12,6 +10,7 @@
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: var(--second-bg-color);
+    color: var(--font-color);
     border-radius: 15px;
     align-content: end;
     padding: 1cm;
@@ -19,8 +18,9 @@
 }
 
 .container-cv h1 {
-    padding-top: 1cm;
+    /* padding-top: 0.1cm; */
     font-family: 'Roboto', sans-serif;
+    margin-top: 1.4cm;
 }
 
 .container-cv h1::before {
@@ -43,7 +43,7 @@
 .categoria-cv {
     text-align: left;
 
-    border-bottom: black solid 1px;
+    border-bottom: var(--font-color) solid 1px;
 
     padding-right: 0.5cm;
     padding-top: 0.2cm;
@@ -56,6 +56,7 @@
     padding-top: 0.2cm;
     padding-bottom: 0.2cm
 }
+
 @media (min-width: 1100px) {
     .seccio-cv {
         font-family: 'Montserrat', sans-serif;
@@ -65,21 +66,21 @@
         margin-bottom: 1cm;
         margin-top: 1cm;
     }
-    
+
     .categoria-cv {
         grid-column: 1/2;
         text-align: right;
-    
-        border-right: black solid 1px;
+
+        border-right: var(--font-color) solid 1px;
         border-bottom: none;
         padding-right: 0.5cm;
         padding-top: 0.2cm;
     }
-    
+
     .contingut-cv {
         grid-column: 2/3;
         text-align: left;
-    
+
         padding-left: 0.5cm;
         padding-top: 0.2cm;
         padding-bottom: 0.2cm
@@ -113,7 +114,7 @@
     text-justify: center;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: var(--font-color);
     border-radius: 15px;
     border-style: solid;
     border-width: 2px;
@@ -149,12 +150,12 @@
     .container-cv-ext {
         vertical-align: middle;
         display: grid;
-        grid-template-columns: minmax(7cm,auto) minmax(810px,60%) minmax(7cm,auto) ;
+        grid-template-columns: minmax(7cm, auto) minmax(810px, 60%) minmax(7cm, auto);
         grid-template-rows: minmax(var(--top-spacing), auto) auto minmax(var(--top-spacing), auto);
         height: 100%;
     }
 
-    
+
 
     .icon {
         text-align: center;
@@ -169,7 +170,7 @@
         font-size: 18px;
         padding: 0.2cm 0.4cm 0.2cm 0.4cm;
         text-decoration: none;
-        color: black;
+        color: var(--font-color);
         border: none;
     }
 
@@ -189,16 +190,17 @@
     float: right;
     margin-top: 15px;
     padding: 15px;
-    color: black;
+    color: var(--font-color);
     border-radius: 5px;
     transition: background 0.5s;
     border-style: solid;
     border-width: 2px;
-    border-color: black;
+    border-color: var(--font-color);
 }
 
 .download-cv:hover {
     background-color: var(--highlight-current);
     color: black;
+    border-color: black;
     transition: background 0.5s;
 }

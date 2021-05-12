@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="styles/nav-bar.css">
     <link rel="stylesheet" href="styles/home.css">
     <script src="javascript/top-button.js"></script>
+    <script src="javascript/theme.js"></script>
+
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
@@ -18,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="javascript:loadTheme()">
     <div class="navbar">
         <div class="nav-items">
             <a href="index.html" class="nav-link ">Home</a>
@@ -26,25 +28,38 @@
             <a href="publications.html" class="nav-link">Publications</a>
             <a href="teaching.html" class="nav-link active-nav-link">Teaching</a>
             <a href="blog.html" class="nav-link">Blog</a>
-            <a href="code.html" class="nav-link">Code</a>
+            <a href="code.html" class="nav-link">Code <i class="fa fa-github fa-lg"></i></a>
         </div>
     </div>
     <div id="menuToggle">
-        <input type="checkbox"/>
+        <input type="checkbox" />
         <span></span>
         <span></span>
         <span></span>
         <ul id="menu">
-          <a href="index.html"><li>Home</li></a>
-          <a href="cv.html"><li>Curriculum Vitae</li></a>
-          <a href="publications.html"><li>Publications</li></a>
-          <a href="teaching.html"><li>Teaching</li></a>
-          <a href="blog.html"><li>Blog</li></a>
-          <a href="code.html"><li>Code</li></a>
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="cv.html">
+                <li>Curriculum Vitae</li>
+            </a>
+            <a href="publications.html">
+                <li>Publications</li>
+            </a>
+            <a href="teaching.html">
+                <li>Teaching</li>
+            </a>
+            <a href="blog.html">
+                <li>Blog</li>
+            </a>
+            <a href="code.html">
+                <li>Code</li>
+            </a>
         </ul>
     </div>
 
-    
+
+    <button onclick="toggleTheme()" class="Btn themeBtn" title="themeswitcher`"><i class="fa  fa-adjust fa-lg"></i></button>
 
 
 
