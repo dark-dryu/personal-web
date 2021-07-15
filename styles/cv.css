@@ -204,3 +204,8 @@
     border-color: black;
     transition: background 0.5s;
 }
+
+
+.logo-prog{
+    filter: invert(var(--icon-color));
+}
