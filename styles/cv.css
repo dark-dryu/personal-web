@@ -209,3 +209,9 @@
 .logo-prog{
     filter: invert(var(--icon-color));
 }
+
+ul.link-list {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}

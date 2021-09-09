@@ -67,9 +67,9 @@ const CONFIG = {
     },
     {
       id: '6',
-      name: 'Mural Andreu',
-      icon: 'user',
-      link: 'https://mural.uv.es/anancas2',
+      name: 'Github',
+      icon: 'github',
+      link: 'https://github.com/dark-dryu',
     },
   ],
 
@@ -79,7 +79,7 @@ const CONFIG = {
 
   //Icons
   firstListIcon: 'crosshair',
-  secondListIcon: 'music',
+  secondListIcon: 'user',
 
   // Links
   lists: {
@@ -97,26 +97,26 @@ const CONFIG = {
         link: 'https://letterboxd.com/',
       },
       {
-        name: 'Rock',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        name: 'IFIC',
+        link: 'https://ific.ific.uv.es/web/',
       },
     ],
     secondList: [
       {
-        name: 'Lo-Fi',
-        link: 'https://www.youtube.com/watch?v=5qap5aO4i9A',
+        name: 'Andreu',
+        link: 'https://angles-castillo.com',
       },
       {
-        name: 'Classica',
-        link: 'https://www.youtube.com/watch?v=_3IphE64yRA',
+        name: 'Cloud',
+        link: 'https://cloud.angles-castillo.com',
       },
       {
-        name: 'Hand curated',
-        link: 'https://open.spotify.com/playlist/6CEKMRtHQtiEDd0tG9ndCu?si=470f407308c44f66',
+        name: 'Piwigo',
+        link: 'https://photos.angles-castillo.com',
       },
       {
-        name: 'Familia',
-        link: 'https://open.spotify.com/playlist/6eDGBHrMJ8Ir2C7AYbuydc?si=aab294bf1eb742ed',
+        name: 'Saco',
+        link: 'https://saco.csic.es',
       },
     ],
   },

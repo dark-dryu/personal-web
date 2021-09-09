@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/nav-bar.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/cv.css">
     <script src="javascript/top-button.js"></script>
     <script src="javascript/theme.js"></script>
 
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ea1fb6353c.js" crossorigin="anonymous"></script>
 </head>
 
 <body onload="javascript:loadTheme()">
@@ -58,10 +60,115 @@
         </ul>
     </div>
 
-    <button onclick="toggleTheme()" class="Btn themeBtn" title="themeswitcher`"><i class="fa  fa-adjust fa-lg"></i></button>
+    <div class="index-cv">
+        <a class="element-cv" href="#link-FQM">
+            <div class="icon">
+                <p><i class="fas fa-atom fa-lg"></i></p>
+            </div>
+            <p>Found. QM</p>
+        </a>
+        <a class="element-cv" href="#link-QC">
+            <div class="icon">
+                <p><i class="fas fa-server fa-lg"></i></p>
+            </div>
+            <p>Q Computing</p>
+        </a>
+        <a class="element-cv" href="#link-sources">
+            <div class="icon">
+                <p><i class="fas fa-book fa-lg"></i></p>
+            </div>
+            <p>Free Sources</p>
+        </a>
+        
+    </div>
 
-    
+    <div class="container-cv-ext">
+        <div class="container-cv">
 
+            <h1 id="link-FQM">Foundations of Quantum Mechanics</h1>
+
+            <div class="seccio-cv">
+                <div class="categoria-cv">Authors</div>
+                <div class="contingut-cv">
+                    <a href="https://scholar.google.co.uk/citations?user=_1XT6RoAAAAJ&hl=en">Jeremy Butterfield</a> (Philosopher, Quantum Gravity) <br>
+                    <a href="https://scholar.google.com/citations?user=Y8cRR70AAAAJ&hl=en">Terry Rudolph</a><br>
+                                        
+                </div>
+            </div>
+
+            <div class="seccio-cv">
+                <div class="categoria-cv">Conferences</div>
+                <div class="contingut-cv">
+                    <a href="https://vqf.iqoqi.oeaw.ac.at/">VQF</a> (Vienna, 7-10 September, 2021) <br>
+                    
+                </div>
+            </div>
+
+            <div class="seccio-cv">
+                <div class="categoria-cv">Papers</div>
+                <div class="contingut-cv">
+                    <ul class="link-list">
+                    <li><a href="https://www.nature.com/articles/s41467-019-09348-x.pdf">The measurement postulates of quantum mechanics are operationally redundant</a> (Derivation of Born rule from other axioms) </li>
+                    <li><a href="https://arxiv.org/pdf/1111.3328.pdf">On the reality of the quantum state</a>(PBR theorem, ontological team)</li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="seccio-cv">
+                <div class="categoria-cv">Interpretations</div>
+                <div class="contingut-cv">
+                    <a href="https://en.wikipedia.org/wiki/Transactional_interpretation">Transactional interpretation</a> <br>
+                    <a href=''>QBism </a>(Quantum Bayesanism) <br>
+                    
+                </div>
+            </div>
+
+            <h1 id="link-QC">Quantum Computing</h1>
+
+            <div class="seccio-cv">
+                <div class="categoria-cv">Authors</div>
+                <div class="contingut-cv">
+                    <a href="https://scholar.google.com/citations?hl=en&user=xmOSptwAAAAJ">John Preskill</a> <br>
+                
+                </div>
+            </div>
+
+            <div class="seccio-cv">
+                <div class="categoria-cv">Conferences</div>
+                <div class="contingut-cv">
+                    <a href="https://www.meetup.com/quantum-valencia/">Quantum Valencia</a> (Divulgative)<br>
+                </div>
+            </div>
+            
+            <h1 id="link-sources">Free Books and Articles</h1>
+            <div class="seccio-cv">
+                <div class="categoria-cv">Books</div>
+                <div class="contingut-cv">
+                    <a href="https://libgen.me/">Libgen</a> (Cool)<br>
+                    <a href="https://libgen.is/">Libgen</a> (Classical)<br>
+                </div>
+            </div>
+            <div class="seccio-cv">
+                <div class="categoria-cv">Papers</div>
+                <div class="contingut-cv">
+                    <a href="https://sci-hub.se/">Sci-Hub</a><br>
+                    
+                </div>
+            </div>
+            <div class="seccio-cv">
+                <div class="categoria-cv">Magazines</div>
+                <div class="contingut-cv">
+                    <a href="https://www.quantamagazine.org/physics/">QuantaMagazine</a><br>
+                    
+                </div>
+            </div>
+        </div>
+
+        <button onclick="topFunction()" class="Btn topBtn" title="Go to top"><i class="fa fa-angle-up fa-lg"></i></button>
+        <button onclick="toggleTheme()" class="Btn themeBtn" title="themeswitcher`"><i class="fa  fa-adjust fa-lg"></i></button>
+
+    </div>
 
 </body>
 
