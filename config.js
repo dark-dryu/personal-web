@@ -57,7 +57,7 @@ const CONFIG = {
       id: '4',
       name: 'Snahp.it',
       icon: 'film',
-      link: 'https://forum.snahp.it/',
+      link: 'https://fora.snahp.eu/',
     },
     {
       id: '5',
