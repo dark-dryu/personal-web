@@ -21,29 +21,19 @@
 }
 
 .cover-photo {
-    grid-column: 1/2;
-    max-width: 10cm;
-    margin: 1cm;
-    border-left: 3px black;
-    opacity: unset;
-    border-radius: 15px;
-    z-index: 0;
+    position: absolute;
+    top: 4.5cm;
+    right: 1cm;
 }
 
-@media (max-width: 850px) {
-    .cover-photo {
-        position: absolute;
-        margin: 0;
-        top: 4.5cm;
-        right: 1cm;
-        height: 3cm;
-        width: 3cm;
-        opacity: unset;
-        border-radius: 1.5cm;
-        border-style: solid;
-        border-width: 3px;
-        border-color: var(--highlight-current);
-    }
+.cover-photo img {
+    height: 3cm;
+    width: 3cm;
+    opacity: unset;
+    border-radius: 1.5cm;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--highlight-current);
 }
 
 .descripcio-personal {
@@ -62,7 +52,7 @@
         vertical-align: middle;
         display: grid;
         grid-template-columns: minmax(20px, auto) minmax(810px, 60%) minmax(20px, auto);
-        grid-template-rows: minmax(var(--top-spacing), auto) auto auto;
+        grid-template-rows: minmax(var(--top-spacing), auto) auto 2cm;
         height: 100%;
     }
 
@@ -70,14 +60,29 @@
         grid-column: 2/3;
         grid-row: 2/3;
         display: grid;
-        grid-template-columns: 1fr [start] auto [end] 1fr 1fr;
+        grid-template-columns: 10cm [start] auto [end] 1fr 1fr;
         background-color: var(--second-bg-color);
         border-radius: 15px;
         align-content: end;
         position: unset;
     }
 
+    .cover-photo {
+        position: unset;
+        grid-column: 1/2;
+        margin: 1cm;
+    }
 
+    .cover-photo img{
+        position: unset;
+        height: 100%;
+        width: 100%;
+        border: none;
+        border-radius: 15px;
+        z-index: 0;
+        object-fit: cover;
+        object-position: 40% 0;
+    }
 
     .columnDivider {
         grid-column: start/end;
