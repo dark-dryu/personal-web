@@ -63,7 +63,7 @@ const CONFIG = {
       id: '5',
       name: 'Gmail',
       icon: 'mail',
-      link: 'https://gmail.com',
+      link: 'https://box.angles-castillo.com/mail',
     },
     {
       id: '6',
@@ -97,8 +97,8 @@ const CONFIG = {
         link: 'https://letterboxd.com/',
       },
       {
-        name: 'IFIC',
-        link: 'https://ific.ific.uv.es/web/',
+        name: 'Saco CSIC',
+        link: 'https://saco.csic.es',
       },
     ],
     secondList: [
@@ -108,15 +108,15 @@ const CONFIG = {
       },
       {
         name: 'Cloud',
-        link: 'https://cloud.angles-castillo.com',
+        link: 'https://box.angles-castillo.com/cloud',
       },
       {
         name: 'Piwigo',
         link: 'https://photos.angles-castillo.com',
       },
       {
-        name: 'Saco',
-        link: 'https://saco.csic.es',
+        name: 'Box',
+        link: 'https://box.angles-castillo.com',
       },
     ],
   },
