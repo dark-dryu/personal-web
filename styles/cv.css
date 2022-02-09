@@ -182,6 +182,10 @@
     }
 }
 
+.icona-UV{
+    margin-top: -3px;
+    filter: invert(var(--icona-UV));
+}
 
 .download-cv {
     text-decoration: none;

@@ -8,6 +8,7 @@ function setTheme(theme) {
         document.documentElement.style.setProperty('--font-color', 'black');
         document.documentElement.style.setProperty('--font-color-inv', 'white');
         document.documentElement.style.setProperty('--icon-color', '0');
+        document.documentElement.style.setProperty('--icona-UV', '0%');
         document.documentElement.style.setProperty('--bg-img', 'url("../assets/pissarra-blur-light.jpg")');
     }
     if (theme == 'dark') {
@@ -19,6 +20,7 @@ function setTheme(theme) {
         document.documentElement.style.setProperty('--font-color', 'white');
         document.documentElement.style.setProperty('--font-color-inv', 'black');
         document.documentElement.style.setProperty('--icon-color', '1');
+        document.documentElement.style.setProperty('--icona-UV', '100%');
         document.documentElement.style.setProperty('--bg-img', 'url("../assets/pissarra-blur-dark.jpg")');
     }
 }
