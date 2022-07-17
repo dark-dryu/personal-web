@@ -19,7 +19,7 @@
     grid-column: start/end;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    height: 2cm;
+    height: 1.5cm;
     text-transform: uppercase;
     padding-bottom: 10px;
 }
@@ -39,7 +39,7 @@
     justify-content: center;
     align-content: center;
 
-    padding-top: 1.5cm;
+    padding-top: 1.0cm;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 0px;
