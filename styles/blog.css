@@ -76,7 +76,9 @@
     height: 25pt;
     overflow: hidden;
 }
-
+.titol-movil{
+    display: none;
+}
 .descripcio-blog h2{
     display: none;
 }
@@ -120,15 +122,15 @@
     }
 
     .descripcio-blog{
+        display: none;
         overflow: unset;
+    }
+
+    .titol-movil{
+        display: unset;
         margin: 10px;
         margin-left: 20px;
         font-size: 12pt;
-    }
-    .descripcio-blog h2{
-        display: unset;
-    }
-    .titol-movil{
         text-align: left;
         margin-bottom: 10px;
     }
