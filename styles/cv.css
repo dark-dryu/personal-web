@@ -180,13 +180,14 @@
         border-radius: 15px;
         transition: background 0.5s;
     }
-    .element-cv:hover .icona-UV{
+
+    .element-cv:hover .icona-UV {
         filter: invert(0%);
     }
 
 }
 
-.icona-UV{
+.icona-UV {
     margin-top: -3px;
     filter: invert(var(--icona-UV));
 }
@@ -207,9 +208,8 @@
 }
 
 .download-cv:hover {
-    background-color: var(--highlight-current);
+    background-color: var(--highlight);
     color: black;
-    border-color: black;
     transition: background 0.5s;
 }
 

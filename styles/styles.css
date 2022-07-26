@@ -2,14 +2,15 @@
     --top-spacing: 3cm;
     --top-spacing-neg: -4cm;
 
-    --main-bg-color: #EDAE49;
+    --main-bg-color: #f0cf65;
     --second-bg-color: #71AFD9;
-    --highlight: #D1495B;
-    --highlight-current: #EDAE49;
+    --highlight: #d97c71;
+    --highlight-current: #f0cf65;
     --font-color: black;
     --font-color-inv: white;
     --bg-img: url("../assets/pissarra-blur-light.jpg");
     --icona-UV: 0%;
+    --border-highlight: #8671d9;
 }
 
 body {
@@ -40,15 +41,17 @@ a {
     font-size: 18px;
     width: 52px;
     border-style: solid;
-    border-width: 2px;
-    border-color: var(--highlight-current);
+    border-width: 3px;
+    border-color: var(--border-highlight);
     outline: none;
     cursor: pointer;
     padding: 15px;
+    padding-top: 17px;
+    padding-left: 12px;
 }
 
 .Btn:hover {
-    background-color: var(--highlight-current);
+    background-color: var(--highlight);
     color: var(--font-color);
     transition: background 0.5s;
 }
@@ -58,8 +61,9 @@ a {
 }
 
 .topBtn {
+    padding-left: 15px;
     right: 3.5%;
-    bottom: 80px;
+    bottom: 90px;
 }
 
 @media (min-width: 1100px) {
@@ -83,6 +87,6 @@ a {
 
     .themeBtn {
         left: 1cm;
-        padding-left: 14px;
+        padding-left: 12px;
     }
 }

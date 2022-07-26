@@ -1,14 +1,15 @@
 function setTheme(theme) {
     if (theme == 'light') {
         localStorage.setItem('panelTheme', theme);
-        document.documentElement.style.setProperty('--main-bg-color', '#EDAE49');
+        document.documentElement.style.setProperty('--main-bg-color', '#f0cf65');
         document.documentElement.style.setProperty('--second-bg-color', '#71AFD9');
-        document.documentElement.style.setProperty('--highlight', '#D1495B');
-        document.documentElement.style.setProperty('--highlight-current', '#ffb703');
+        document.documentElement.style.setProperty('--highlight', '#d97c71');
+        document.documentElement.style.setProperty('--highlight-current', '#f0cf65');
         document.documentElement.style.setProperty('--font-color', 'black');
         document.documentElement.style.setProperty('--font-color-inv', 'white');
         document.documentElement.style.setProperty('--icon-color', '0');
         document.documentElement.style.setProperty('--icona-UV', '0%');
+        document.documentElement.style.setProperty('--border-highlight', '#3B6C8C');
         document.documentElement.style.setProperty('--bg-img', 'url("../assets/pissarra-blur-light.jpg")');
     }
     if (theme == 'dark') {
@@ -21,6 +22,7 @@ function setTheme(theme) {
         document.documentElement.style.setProperty('--font-color-inv', 'black');
         document.documentElement.style.setProperty('--icon-color', '1');
         document.documentElement.style.setProperty('--icona-UV', '100%');
+        document.documentElement.style.setProperty('--border-highlight', '#ffb703');
         document.documentElement.style.setProperty('--bg-img', 'url("../assets/pissarra-blur-dark.jpg")');
     }
 }
