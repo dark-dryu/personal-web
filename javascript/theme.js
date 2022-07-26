@@ -2,7 +2,7 @@ function setTheme(theme) {
     if (theme == 'light') {
         localStorage.setItem('panelTheme', theme);
         document.documentElement.style.setProperty('--main-bg-color', '#EDAE49');
-        document.documentElement.style.setProperty('--second-bg-color', '#3E96A4');
+        document.documentElement.style.setProperty('--second-bg-color', '#71AFD9');
         document.documentElement.style.setProperty('--highlight', '#D1495B');
         document.documentElement.style.setProperty('--highlight-current', '#ffb703');
         document.documentElement.style.setProperty('--font-color', 'black');

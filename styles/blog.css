@@ -123,15 +123,13 @@
 
     .descripcio-blog{
         display: none;
-        overflow: unset;
     }
 
     .titol-movil{
         display: unset;
-        margin: 10px;
         margin-left: 20px;
-        font-size: 12pt;
+        margin-right: 20px;
+        font-size: 10pt;
         text-align: left;
-        margin-bottom: 10px;
     }
 }

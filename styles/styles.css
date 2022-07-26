@@ -3,7 +3,7 @@
     --top-spacing-neg: -4cm;
 
     --main-bg-color: #EDAE49;
-    --second-bg-color: #3E96A4;
+    --second-bg-color: #71AFD9;
     --highlight: #D1495B;
     --highlight-current: #EDAE49;
     --font-color: black;
@@ -23,7 +23,8 @@ body {
 }
 
 a {
-    color: var(--highlight-current)
+    /* color: var(--highlight-current) */
+    color: #FFDE7C;
 }
 
 
