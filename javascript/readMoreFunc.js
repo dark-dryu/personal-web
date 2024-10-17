@@ -61,3 +61,19 @@ function readMoreFunc4() {
         moreText.style.display = "inline";
     }
 }
+
+function readMoreFunc5() {
+    var dots = document.getElementById("dots5");
+    var moreText = document.getElementById("more5");
+    var btnText = document.getElementById("BtnReadMore5");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "···";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "hide";
+        moreText.style.display = "inline";
+    }
+}
