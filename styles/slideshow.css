@@ -1,0 +1,109 @@
+    .slideshow {
+      position: relative;
+      width: min(900px, 95%);
+      aspect-ratio: 16 / 10; /* keep a nice ratio; change as needed */
+      margin: 2rem auto;
+      overflow: hidden;
+      border: 5px solid var(--border-highlight); /* user requested 5px border thickness */
+      border-radius: 8px;
+      background: #000;
+    }
+
+    /* Slide wrapper — horizontally laid out slides */
+    .slides {
+      display: flex;
+      height: 100%;
+      transition: transform 400ms ease;
+    }
+
+    .slide {
+      min-width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+      user-select: none;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* cover the box */
+      display: block;
+    }
+
+    /* Dots container placed inside the box, bottom center */
+    .dots {
+      position: absolute;
+      left: 50%;
+      bottom: 12px; /* inside the box */
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(4px);
+      padding: 6px 8px;
+      border-radius: 999px;
+    }
+
+
+    @media (max-width: 1100px) {
+      .dots{
+        display: none;
+      }
+      .dot{
+        display: none;
+      }
+    }
+
+    /* Each dot is a small circle with the slide number inside */
+    .dot {
+      width: 14px;
+      height: 14px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 50%;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 2px solid rgba(255,255,255,0.6);
+      background: rgba(0,0,0,0.35);
+      color: rgba(255,255,255,0.85);
+      transition: transform 160ms ease, background 160ms ease, color 160ms ease;
+    }
+
+    .dot:focus { outline: 3px solid rgba(255,255,255,0.18); }
+
+    /* Active dot styling */
+    .dot.active {
+      transform: scale(1.12);
+      background: rgba(255,255,255,0.95);
+      color: #111;
+      border-color: rgba(0,0,0,0.15);
+    }
+
+    /* Optional prev/next arrows (subtle and inside the box) */
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.35);
+      color: white;
+      border: 2px solid rgba(255,255,255,0.12);
+      cursor: pointer;
+      font-weight: 700;
+      user-select: none;
+    }
+    .arrow.left { left: 10px; }
+    .arrow.right { right: 10px; }
+
+    /* Responsive tweaks */
+    @media (max-width: 480px) {
+      .dot { width: 30px; height: 30px; font-size: 13px; }
+      .arrow { width: 36px; height: 36px; }
+    }

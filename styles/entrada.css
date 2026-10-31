@@ -1,0 +1,119 @@
+.container-entrada-ext {
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+    grid-template-rows: minmax(var(--top-spacing), auto) auto 20px;
+    height: 100%;
+}
+@media (min-width: 1100px) {
+    .container-entrada-ext {
+        vertical-align: middle;
+        display: grid;
+        grid-template-columns: auto minmax(810px, 60%) auto;
+        grid-template-rows: minmax(var(--top-spacing), auto) auto minmax(var(--top-spacing), auto);
+        height: 100%;
+    }
+}
+
+.container-entrada {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: var(--second-bg-color);
+    color: var(--font-color);
+    border-radius: 15px;
+    align-content: end;
+    padding: 30px;
+}
+@media (min-width: 1100px) {
+    .container-entrada{
+        padding: 1cm;
+        padding-top: 0.5cm;
+    }
+}
+
+.container-entrada h1 {
+    /* padding-top: 0.1cm; */
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1.4cm;
+}
+
+.container-entrada h1::before {
+    display: block;
+    content: " ";
+    margin-top: var(--top-spacing-neg);
+    height: var(--top-spacing);
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.subtitol{
+    margin-top: -20px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.paragraph-entrada{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 1cm;
+    margin-top: 0.4cm;
+    text-align: justify;
+}
+
+@media (max-width: 1100px) {
+    .paragraph-entrada{
+        text-align: start;
+    }
+}
+    
+.slide-container{
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+@media (min-width: 1100px) {
+    .slide-container{
+        float: left;
+        width: 50%;
+        margin-top: -30px;
+        margin-right: 20px;
+        margin-bottom: -20px;
+    }
+}
+
+
+.lang-blog {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    float: right;
+    margin: 10px;
+    padding: 10px;
+    padding-bottom: 7px;
+    color: var(--font-color);
+    border-radius: 5px;
+    transition: background 0.5s;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--font-color);
+}
+
+.lang-blog:hover {
+    background-color: var(--highlight);
+    color: black;
+    transition: background 0.5s;
+}
+
+
+@media (max-width: 1100px) {
+    .lang-blog {
+        border-radius: 50%;
+        font-size: 14px;
+        margin: 10px;
+        padding: 10px;
+    }
+    .lang-blog img{
+        display: none;
+    }
+}

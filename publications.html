@@ -73,6 +73,12 @@
     </div>
 
     <div class="index-cv">
+        <a class="element-cv" href="#y2026">
+            <p>2026</p>
+        </a>
+        <a class="element-cv" href="#y2025">
+            <p>2025</p>
+        </a>
         <a class="element-cv" href="#y2024">
             <p>2024</p>
         </a>
@@ -89,6 +95,85 @@
 
     <div class="container-pub-ext">
         <div class="container-pub">
+            
+            <h1 id="y2026">2026</h1>
+            <div class="publication-entry">
+                <div class="pub-title">Adaptive time Compressed QITE (ACQ) and its geometrical interpretation</div>
+                <div class="pub-im-link">
+                    <div class="pub-image"><img src="assets/files/Publications/ACQ.png" width=100%></div>
+                    <div class="pub-links">
+                        <a class="pub-links-element arxiv" href="https://arxiv.org/abs/2510.15781">arXiv</a>
+                        <a class="pub-links-element revista" href="https://doi.org/10.1088/2058-9565/ae7828">QST</a>
+                        <!-- <a class="pub-links-element cites">Citations: </a> -->
+                    </div>
+                </div>
+                <div class="pub-abstract">
+                    Preparing the ground state of a given Hamiltonian is a computational task of interest in many fields, such as material science, chemistry and even some optimization problems, to name a few. Efficiently preparing ground states for large, strongly correlated systems is a challenging task for both classical and quantum hardware.
+                    <span id="dots7"></span><span id="more7">
+                    Drawing from classical optimization methods, e.g. dynamical optimization techniques, one may deduce the spectral decomposition in manner that avoids direct spectral decomposition and is amenable to Trotterization methods. An instance of the latter is ground state preparation by Imaginary Time Evolution (ITE), understood in physical terms as a natural cooling process. Its quantum version QITE (Quantum Imaginary Time Evolution) aims at implementing ITE in a quantum computer. In this paper we introduce a novel QITE algorithm, which leverages underlying geometric properties for algorithm-runtime and circuit depth reduction. This will materialize in the form of an iterative Line Search approach for minimization of energy as well as a Newton's method approach for the deduction of the optimal time-steps for each iteration of QITE. The depth-reduction will be carried out via approximating the resulting unitary operator estimated from the QITE algorithm with unitary operator which is an element of a one-parameter group; making expressible as a single unitary in a quantum circuit. Furthermore, we perform a numerical study to stablish the scaling of fidelities with the different truncation parameters and give gate counts estimates for each. 
+                    </span><button onclick="readMoreFunc7()" id="BtnReadMore7" class="RMLbut">···</button></div>
+            </div>
+            <div class="publication-entry">
+                <div class="pub-title">Emergence of a Macroscopic Cat State and Multi-Channel Entanglement in a Frustrated Cluster Spin Chain</div>
+                <div class="pub-im-link">
+                    <div class="pub-image"><img src="assets/files/Publications/2026_glauber.png" width=100%></div>
+                    <div class="pub-links">
+                        <a class="pub-links-element arxiv" href="https://arxiv.org/abs/2607.28373">arXiv</a>
+                    </div>
+                </div>
+                <div class="pub-abstract">
+                    We study a one-dimensional frustrated spin chain, which combines cluster-Ising and anisotropic next-nearest neighbor Ising models. We first offer a historical perspective that justifies the studied model. Then we study in detail the two quantum phases and prove that they are separated by a first order quantum phase transition.
+                    <span id="dots8"></span><span id="more8">
+                    On one side, the ground state corresponds to a ferromagnetic phase, shows the presence of macroscopic cat states, and a small gap that closes in the thermodynamic limit. On the other phase, competing interactions avoid the establishment of a topological phase, though it conserves large incommensurate quantum correlations. We prove it is fundamentally distinct from a simple paramagnet, and we name it an incommensurate phase. This is a gapped phase, which gap does not close in the thermodynamic limit. While in the ferromagnetic phase there are two dominant Schmidt coefficients, in the incommensurate phase there are four. This corresponds to four distinct bipartite entanglement channels contributing substantially to the ground state. Finally, we discuss the utility of the macroscopic cat states for quantum metrology applications and the experimental feasibility of the system. 
+                    </span><button onclick="readMoreFunc8()" id="BtnReadMore8" class="RMLbut">···</button></div>
+            </div>
+            <div class="publication-entry">
+                <div class="pub-title">Efficiently architecting VQAs: Expressibility-Trainability-Resources Pareto-Optimality</div>
+                <div class="pub-im-link">
+                    <div class="pub-image"><img src="assets/files/Publications/2026_vqa.png" width=100%></div>
+                    <div class="pub-links">
+                        <a class="pub-links-element arxiv" href="https://arxiv.org/abs/2603.22142">arXiv</a>
+                    </div>
+                </div>
+                <div class="pub-abstract">
+                    Ansatz selection is a key factor in the performance of variational quantum algorithms (VQAs). While much of the state-of-the-art still relies on heuristic choices, an inadequate circuit structure can compromise both the expressive power and the trainability of the resulting model. Recent results have also established theoretical connections between expressibility and the onset of barren plateaus, highlighting the need for systematic criteria for ansatz selection. 
+                    <span id="dots9"></span><span id="more9">
+                        In this work, the ansatz is treated as a design feature to be optimized rather than a fixed block, and a design space exploration (DSE) is performed over a diverse set of parametrized quantum circuits (PQCs). Three complementary metrics -- expressibility, trainability, and resource cost -- are evaluated and used to analyze the trade-offs that emerge across different PQCs. Beyond identifying Pareto-optimal candidates, this multi-objective perspective helps clarify the interplay between these metrics and contributes quantitative evidence toward understanding the expressibility--trainability tension in variational circuits. 
+                    </span><button onclick="readMoreFunc9()" id="BtnReadMore9" class="RMLbut">···</button></div>
+            </div>
+            <div class="publication-entry">
+                <div class="pub-title">Adaptive Parallelism-Aware Qubit Routing for Ion Trap QCCD Architectures</div>
+                <div class="pub-im-link">
+                    <div class="pub-image"><img src="assets/files/Publications/2026_routing.png" width=100%></div>
+                    <div class="pub-links">
+                        <a class="pub-links-element arxiv" href="https://arxiv.org/abs/2603.22142">arXiv</a>
+                    </div>
+                </div>
+                <div class="pub-abstract">
+                    Trapped-ion Quantum Charge-Coupled Device (QCCD) architectures promise scalability through interconnected trap zones and dynamic ion transport; however, this transport capability creates a complex compilation challenge: how to move qubits efficiently without degrading fidelity. We introduce a routing strategy that turns this challenge into an advantage by exploiting operational parallelism across traps while adapting to both algorithmic structure and device topology through a configurable multi-parameter scoring mechanism.
+                    <span id="dots10"></span><span id="more10">
+                         Across a broad suite of benchmarks and QCCD layouts, the method consistently reduces ion-transport overhead and improves execution fidelity, outperforming state-of-the-art routing techniques. These results highlight that explicitly balancing movement overhead and execution parallelism under architectural constraints is key to unlocking the full potential of modular trapped-ion quantum processors. 
+                    </span><button onclick="readMoreFunc10()" id="BtnReadMore10" class="RMLbut">···</button></div>
+            </div>
+            
+            <h1 id="y2025">2025</h1>
+            <div class="publication-entry">
+                <div class="pub-title">Understanding Quantum Imaginary Time Evolution and it Variational Form</div>
+                <div class="pub-im-link">
+                    <div class="pub-image"><img src="assets/files/Publications/understandingQITE.png" width=100%></div>
+                    <div class="pub-links">
+                        <a class="pub-links-element arxiv" href="https://arxiv.org/abs/2510.02015">arXiv</a>
+                        <a class="pub-links-element revista" href="https://doi.org/10.1007/978-3-032-05748-8_22">DCAI</a>
+                        <!-- <a class="pub-links-element cites">Citations: </a> -->
+                    </div>
+                </div>
+                <div class="pub-abstract">
+                    Many computationally hard problems can be encoded in quantum Hamiltonians. The solution to these problems is given by the ground states of these Hamiltonians. A state-of-the-art algorithm for finding the ground state of a Hamiltonian is the so-called Quantum Imaginary Time Evolution (QITE) which approximates imaginary time evolution by a unitary evolution that can be implemented in quantum hardware.
+                    <span id="dots6"></span><span id="more6">
+                    In this paper, we review the original algorithm together with a comprehensive computer program, as well as, the variational version of it. 
+                    </span><button onclick="readMoreFunc6()" id="BtnReadMore6" class="RMLbut">···</button></div>
+            </div>
+
 
             <h1 id="y2024">2024</h1>
 

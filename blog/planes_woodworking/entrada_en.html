@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/nav-bar.css">
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/entrada.css">
+    <link rel="stylesheet" href="/styles/slideshow.css">
+    
+    <!-- scripts -->
+    <script src="/javascript/top-button.js"></script>
+    <script src="/javascript/slideshow.js" defer></script>
+    <script src="/javascript/theme.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body onload="javascript:loadTheme()">
+
+    <div class="navbar">
+        <div class="nav-items">
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/cv.html" class="nav-link">CV</a>
+            <a href="/publications.html" class="nav-link">Publications</a>
+            <a href="/links.html" class="nav-link">Links</a>
+            <a href="/blog.html" class="nav-link active-nav-link">Blog</a>
+            <a href="/code.html" class="nav-link">Code <i class="fa fa-github fa-lg"> </i></a>
+        </div>
+    </div>
+
+    <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+            <a href="/index.html">
+                <li>Home</li>
+            </a>
+            <a href="/cv.html">
+                <li>Curriculum Vitae</li>
+            </a>
+            <a href="/publications.html">
+                <li>Publications</li>
+            </a>
+            <a href="/links.html">
+                <li>Links</li>
+            </a>
+            <a href="/blog.html">
+                <li>Blog</li>
+            </a>
+            <a href="/code.html">
+                <li>Code</li>
+            </a>
+        </ul>
+    </div>
+
+    <div class="container-entrada-ext">
+        <div class="container-entrada">
+            <a class="lang-blog" href="/blog/planes_woodworking/entrada_ca.html"><img alt="Catala"  height="20" src="/assets/icons/es-ct.svg"> CA</a>
+            <a class="lang-blog" href="/blog/planes_woodworking/entrada_en.html"><img alt="English"  height="20" src="/assets/icons/gb.svg"> EN</a>
+
+            <h1>Second hand planes</h1>
+            <div class="subtitol">01 October 2025</div>
+            <div class="paragraph-entrada">
+                My journey with handplanes, and with woodworking for that matter,
+                started around 2 years ago. I first got into the hobbie to build a pair
+                of speakers, which later became two pairs of speakers and a subwoofer. I only used
+                power tools to make them, but while looking around for different wood types 
+                for speakers I came across handtool woodworking youtubers, and got hit hard
+                by how handtools are utilized. Going to one of the only woodworking shops 
+                with handtools also helped, I bought my first handsaw and gauge, and from
+                there the search for my first handplane started (the ones in the shop weren't 
+                afordable). I first headed to Wallapop, a second hand market app, and since 
+                I never had a plane in my hands I wanted to buy it in person, and only had
+                one option at the time in my city, so I bought a 4 1/2 Acorn plane.
+            </div>
+
+            <h2>Acorn 4 1/2</h2>
+            
+            <div class="slide-container">
+                <div class="slideshow" aria-roledescription="carousel" aria-label="Image slideshow">
+                  <div class="slides" id="slides">
+                    <div class="slide" role="group" aria-roledescription="slide" aria-label="Slide 1 of 4">
+                      <img src="acorn.jpg" alt="Photo 1">
+                    </div>
+                    <div class="slide" role="group" aria-roledescription="slide" aria-label="Slide 2 of 4">
+                      <img src="portada.jpg" alt="Photo 2">
+                    </div>
+                    <div class="slide" role="group" aria-roledescription="slide" aria-label="Slide 3 of 4">
+                      <img src="acorn.jpg" alt="Photo 3">
+                    </div>
+                    <div class="slide" role="group" aria-roledescription="slide" aria-label="Slide 4 of 4">
+                      <img src="portada.jpg" alt="Photo 4">
+                    </div>
+                  </div>
+
+                  <!-- optional arrows -->
+                  <button class="arrow left" id="prev" aria-label="Previous slide">‹</button>
+                  <button class="arrow right" id="next" aria-label="Next slide">›</button>
+          
+                  <!-- numbered dots inside the box -->
+                  <div class="dots" id="dots" role="tablist" aria-label="Slides navigation">
+                    <!-- JS will populate these -->
+                  </div>
+                </div>
+            </div>
+            
+            <div class="paragraph-entrada">
+                My journey with handplanes, and with woodworking for that matter,
+                started around 2 years ago. I first got into the hobbie to build a pair
+                of speakers, which later became two pairs of speakers and a subwoofer. I only used
+                power tools to make them, but while looking around for different wood types 
+                for speakers I came across handtool woodworking youtubers, and got hit hard
+                by how handtools are utilized. Going to one of the only woodworking shops 
+                with handtools also helped, I bought my first handsaw and gauge, and from
+                there the search for my first handplane started (the ones in the shop weren't 
+                afordable). I first headed to Wallapop, a second hand market app, and since 
+                I never had a plane in my hands I wanted to buy it in person, and only had
+                one option at the time in my city, so I bought a 4 1/2 Acorn plane.
+            </div>
+          
+          
+
+        
+
+        </div>
+    </div>
+
+    <button onclick="toggleTheme()" class="Btn themeBtn" title="themeswitcher`"><i class="fa  fa-adjust fa-lg"></i></button>
+
+</body>
+
+</html>

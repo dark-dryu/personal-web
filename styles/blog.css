@@ -1,7 +1,7 @@
 .container-blog-ext {
     vertical-align: middle;
     display: grid;
-    grid-template-columns: minmax(7cm, auto) minmax(810px, 60%) minmax(7cm, auto);
+    grid-template-columns: auto minmax(810px, 60%) auto;
     grid-template-rows: minmax(var(--top-spacing), auto) auto minmax(var(--top-spacing), auto);
     height: 100%;
     font-family: "Roboto", sans-serif;
